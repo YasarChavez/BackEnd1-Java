@@ -16,7 +16,23 @@ public class TEST {
         Funciones.multiplicar(3.0, 4.0);
         System.out.println("Dividir 10/3");
         Funciones.dividir(10.0, 3.0);
+        System.out.println("Restar 100 - 50");
+        Funciones.restar(100,50);
 
         System.out.println("Operaciones terminadas.");
+
+        int, long, double, boolean, String.
+        int n1=5;
+        System.out.println(n1);
+        long n2=5666;
+        System.out.println(n2);
+        double n3=50.256;
+        System.out.println(n3);
+        boolean verd = true;
+        System.out.println(verd);
+        String saludo = "Hola chicos!";
+        System.out.println(saludo);
+
+
     }
 }
