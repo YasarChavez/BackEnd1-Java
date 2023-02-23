@@ -22,4 +22,5 @@ public abstract class Funciones {
     public static void dividir(double n1, double n2) {
         System.out.println(n1 / n2);
     }
+
 }
