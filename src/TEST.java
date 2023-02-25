@@ -21,7 +21,7 @@ public class TEST {
 
         System.out.println("Operaciones terminadas.");
 
-        int, long, double, boolean, String.
+       // int, long, double, boolean, String.
         int n1=5;
         System.out.println(n1);
         long n2=5666;
