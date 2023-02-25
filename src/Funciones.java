@@ -3,6 +3,8 @@
 // (powered by FernFlower decompiler)
 //
 
+import java.util.Scanner;
+
 public abstract class Funciones {
     public Funciones() {
     }
