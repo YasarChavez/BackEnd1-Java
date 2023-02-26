@@ -20,6 +20,7 @@ public class Ejercicio6 {
             System.out.println(n2+" es mayor a 26.");
         } else if (n1<26 && n2 <26) {
             System.out.println("Ambos numeros son menores que 26!!!");
+
         }
     }
 }
