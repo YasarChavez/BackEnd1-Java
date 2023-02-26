@@ -60,6 +60,7 @@ public class Ejercicio7 {
             default:
                 System.out.println("Calificacion incorrecta, hasta pronto.");
         }
+
         /* OTRO TIPO DE SWITCH
         switch (calificacion) {
             case 1 -> System.out.println("Fue tan mala?");
@@ -69,5 +70,6 @@ public class Ejercicio7 {
             case 5 -> System.out.println("Que bueno que la disfrutaras tanto!");
             default -> System.out.println("Calificacion incorrecta, hasta pronto.");
         }*/
+
     }
 }
