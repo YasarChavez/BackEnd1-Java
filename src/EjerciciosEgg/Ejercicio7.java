@@ -8,7 +8,6 @@ public class Ejercicio7 {
         /*Considera que estás desarrollando una web para una empresa que fabrica motores (suponemos
         que se trata del tipo de motor de una bomba para mover fluidos). Definir una variable tipoMotor y
         permitir que el usuario ingrese un valor entre 1 y 4. El programa debe mostrar lo siguiente:
-
         Si el tipo de motor es 1, mostrar un mensaje indicando “La bomba es una bomba de agua”.
         o Si el tipo de motor es 2, mostrar un mensaje indicando “La bomba es una bomba de
         gasolina”.
