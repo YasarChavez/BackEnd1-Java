@@ -1,16 +1,10 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
-public class TEST {
-    public TEST() {
-    }
-
+public class FizzBuzz {
     public static void main(String[] args) {
-        for (int i = 1; i < 101; i++) {
+        //Escribir "Fizz" cuando I sea multiplo de 3.
+        //"Buzz" cuando sea multiplo de 5 y "FizzBuzz" cuando es multiplo de ambos.
+        for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("Fizz Buzz");
+                System.out.println("FizzBuzz");
             } else if (i % 5 == 0) {
                 System.out.println("Buzz");
             } else if (i % 3 == 0) {
@@ -18,5 +12,4 @@ public class TEST {
             } else System.out.println(i);
         }
     }
-
 }
