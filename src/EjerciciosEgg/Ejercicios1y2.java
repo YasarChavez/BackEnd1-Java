@@ -27,6 +27,7 @@ public class Ejercicios1y2 {
         System.out.println("float " + dato4);
         System.out.println("boolean " + dato5);
         System.out.println("string " + dato6);
+        System.out.println();
 
 
     }
