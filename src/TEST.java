@@ -19,7 +19,7 @@ public class TEST {
                 System.out.println(i + " Fizz");
             } else System.out.println(i);
             try {
-                TimeUnit.MILLISECONDS.sleep(200);
+                TimeUnit.SECONDS.sleep(1);
             } catch (Exception e) {
             }
 
