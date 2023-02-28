@@ -9,5 +9,6 @@ public class LeerValoresPorTeclado {
         nombre = leer.next(); //Leemos "nombre"
         System.out.println("Bienvenido " + nombre + "!"); //Escribimos "Texto" + nombre + "Texto"
         System.out.println("Espero que aprendas mucho el dia de hoy.");
+        System.out.println("Adios");
     }
 }
