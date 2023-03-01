@@ -20,10 +20,11 @@ public class TEST {
             } else System.out.println(i);
             try {
                 TimeUnit.SECONDS.sleep(1);
-            } catch (Exception e) {
+            } catch (Exception ignored) {
             }
 
         }
+
     }
 
 }
