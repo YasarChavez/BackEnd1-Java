@@ -1,3 +1,5 @@
+package Varios;
+
 public class Comentarios {
 
     //TIPOS DE DATOS PRIMITIVOS

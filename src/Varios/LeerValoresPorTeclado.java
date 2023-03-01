@@ -1,3 +1,5 @@
+package Varios;
+
 import java.util.Scanner;
 
 public class LeerValoresPorTeclado {
