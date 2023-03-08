@@ -1,4 +1,4 @@
-package EjerciciosEgg;
+package Ejercicios;
 
 public class Ejercicios1y2 {
     public static void main(String[] args) {

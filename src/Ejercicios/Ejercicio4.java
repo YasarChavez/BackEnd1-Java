@@ -1,4 +1,4 @@
-package EjerciciosEgg;
+package Ejercicios;
 
 import java.util.Scanner;
 
