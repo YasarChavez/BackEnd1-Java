@@ -6,7 +6,7 @@ package Varios;//
 import java.util.Scanner;
 
 public abstract class Funciones {
-    public Funciones() {
+    private Funciones() {
     }
 
     public static void sumar(double n1, double n2) {
