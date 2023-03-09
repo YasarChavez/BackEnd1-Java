@@ -13,5 +13,5 @@ Nota: investigar la función Math.sqrt(). */
         System.out.println("El doble de "+ num + " es: "+(num*2));
         System.out.println("El triple de "+ num + " es: "+(num*3));
         System.out.println("La raíz cuadrada de "+num+" es: "+Math.sqrt(num));
-    }//Hola
+    }
 }
