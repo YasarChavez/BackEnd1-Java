@@ -9,12 +9,14 @@ public class Ejerc03 {
 y después toda en minúsculas.
 Nota: investigar la función toUpperCase() y toLowerCase() en Java.*/
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese una palabra en minúsculas:");
-        String frase = String.valueOf(leer.next());
-        convertirMayusculas(frase);
+        System.out.println("Ingrese una frase mezclando minúsculas y mayúsculas:");
+        String frase;
+        frase = leer.nextLine();
+        String mayusculas = frase.toUpperCase();
+        System.out.println(mayusculas);
+        String minusculas = frase.toLowerCase();
+        System.out.println(minusculas);
+
     }
 
-    private static void convertirMayusculas(String a) {
-        System.out.println(a.toUpperCase());
-    }
 }
