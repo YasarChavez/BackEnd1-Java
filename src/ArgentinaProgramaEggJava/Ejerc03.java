@@ -1,5 +1,6 @@
 package ArgentinaProgramaEggJava;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejerc03 {
@@ -8,7 +9,8 @@ public class Ejerc03 {
 y después toda en minúsculas.
 Nota: investigar la función toUpperCase() y toLowerCase() en Java.*/
         Scanner leer = new Scanner(System.in);
-        String frase = leer.next();
+        System.out.println("Ingrese una palabra en minúsculas:");
+        String frase = String.valueOf(leer.next());
         convertirMayusculas(frase);
     }
 
