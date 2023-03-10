@@ -1,4 +1,4 @@
-package ArgentinaProgramaEggJava;
+package Guia02;
 
 import java.util.Scanner;
 

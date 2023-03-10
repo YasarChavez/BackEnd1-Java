@@ -1,6 +1,5 @@
-package ArgentinaProgramaEggJava;
+package Guia02;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejerc03 {
