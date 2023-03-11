@@ -12,5 +12,6 @@ la suma*/
         int num1 = leer.nextInt();
         int num2 = leer.nextInt();
         System.out.println("La suma de ambos números es: " + (num1+num2));
+
     }
 }
