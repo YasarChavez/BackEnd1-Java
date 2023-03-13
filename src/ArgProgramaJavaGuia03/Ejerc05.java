@@ -18,9 +18,10 @@ public class Ejerc05 {
 
         do {
             suma = suma+leer.nextInt();
-        } while (suma<limite);
+        } while (suma<=limite);
 
         System.out.println("Se pasó del limite!");
         System.out.println("Total de la suma: " + suma);
+        System.out.println("Se pasó por :"+ (suma-limite));
     }
 }

@@ -20,5 +20,6 @@ public class Ejerc04 {
         }else {
             System.out.println("Incorrecto!");
         }
+
     }
 }
