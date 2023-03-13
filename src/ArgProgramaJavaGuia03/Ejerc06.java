@@ -16,7 +16,7 @@ public class Ejerc06 {
 
         Scanner leer = new Scanner(System.in);
 
-        System.out.println("Ingrese dos numeros enteros positivos:");
+        System.out.println("Ingrese dos números enteros positivos:");
         int n1 = leer.nextInt();
         int n2 = leer.nextInt();
 
@@ -44,17 +44,17 @@ public class Ejerc06 {
                     System.out.println((n1-n2));
                     break;
                 case 3:
-                    System.out.println("Multiplicacion");
+                    System.out.println("Multiplicación");
                     System.out.println((n1*n2));
                     break;
                 case 4:
-                    System.out.println("Division");
+                    System.out.println("División");
                     System.out.println((n1/n2));
                     break;
                 case 5:
                     break;
                 default:
-                    System.out.println("Opcion incorrecta!");
+                    System.out.println("Opción incorrecta!");
                     break;
             }
         }while (menu!=5);
