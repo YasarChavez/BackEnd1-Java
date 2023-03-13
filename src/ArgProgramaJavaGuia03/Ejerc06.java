@@ -33,6 +33,7 @@ public class Ejerc06 {
             System.out.println("5. SALIR");
             System.out.println("Elija opción:");
             menu = leer.nextInt();
+
             switch (menu){
                 case 1:
                     System.out.println("Suma");
