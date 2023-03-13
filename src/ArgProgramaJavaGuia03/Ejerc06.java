@@ -35,15 +35,19 @@ public class Ejerc06 {
             menu = leer.nextInt();
             switch (menu){
                 case 1:
+                    System.out.println("Suma");
                     System.out.println((n1+n2));
                     break;
                 case 2:
+                    System.out.println("Resta");
                     System.out.println((n1-n2));
                     break;
                 case 3:
+                    System.out.println("Multiplicacion");
                     System.out.println((n1*n2));
                     break;
                 case 4:
+                    System.out.println("Division");
                     System.out.println((n1/n2));
                     break;
                 case 5:
