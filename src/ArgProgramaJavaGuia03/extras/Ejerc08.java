@@ -20,8 +20,8 @@ sumarse. Nota: recordar el uso de la sentencia break.*/
                 if (nums % 2 == 0 && nums > 0) {
                     par++;
                     cant++;
-                } else if (nums % 2 != 0 && nums > 0){
-                    impar++ ;
+                } else if (nums % 2 != 0 && nums > 0) {
+                    impar++;
                     cant++;
                 }
             }
