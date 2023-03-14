@@ -1,7 +1,7 @@
 package ArgProgramaJavaGuia03.extras;
 
 import javax.swing.*;
-import java.util.Scanner;
+
 
 public class Ejerc09 {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Ejerc09 {
         dado que 11 es menor que 13, entonces: el residuo es 11 y el cociente es 3.
         ¿Aún no lo entendiste? Recomendamos googlear división con restas sucesivas
         */
-        Scanner leer = new Scanner(System.in);
+
         int cociente = 0;
         int dividendo = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el Dividendo:"));
         int divisor = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el divisor:"));
@@ -24,7 +24,7 @@ public class Ejerc09 {
             cociente++;
             dividendo = dividendo - divisor;
         }
-        System.out.println("Restas realizadas: " + cociente);
+        System.out.println("Cociente: " + cociente);
         System.out.println("Residuo: " + (dividendo % divisor));
     }
 }
