@@ -23,5 +23,6 @@ public class Ejerc05 {
         System.out.println("Se pasó del limite!");
         System.out.println("Total de la suma: " + suma);
         System.out.println("Se pasó por : "+ (suma-limite));
+        
     }
 }

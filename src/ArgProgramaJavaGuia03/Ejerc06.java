@@ -21,10 +21,10 @@ public class Ejerc06 {
         int n2 = leer.nextInt();
 
 
+        int menu;
+        boolean bucle = true;
 
-        int menu = 0;
-
-        do{
+        do {
             System.out.println("MENU:");
             System.out.println("1. SUMAR");
             System.out.println("2. RESTAR");
@@ -34,29 +34,33 @@ public class Ejerc06 {
             System.out.println("Elija opción:");
             menu = leer.nextInt();
 
-            switch (menu){
-                case 1:
-                    System.out.println("Suma");
-                    System.out.println((n1+n2));
-                    break;
-                case 2:
-                    System.out.println("Resta");
-                    System.out.println((n1-n2));
-                    break;
-                case 3:
-                    System.out.println("Multiplicación");
-                    System.out.println((n1*n2));
-                    break;
-                case 4:
-                    System.out.println("División");
-                    System.out.println((n1/n2));
-                    break;
-                case 5:
-                    break;
-                default:
-                    System.out.println("Opción incorrecta!");
-                    break;
+
+            switch (menu) {
+                case 1 -> {
+                    int suma = n1 + n2;
+                    System.out.println(suma);
+                }
+                case 2 -> {
+                    int resta = n1 - n2;
+                    System.out.println(resta);
+                }
+                case 3 -> {
+                    int multiplicacion = n1 * n2;
+                    System.out.println(multiplicacion);
+                }
+                case 4 -> {
+                    int division = n1 / n2;
+                    System.out.println(division);
+                }
+                case 5 -> {
+                    System.out.println("¿Está seguro que desea salir del programa (S/N)?");
+                    String salir = leer.next();
+                    if (salir.equalsIgnoreCase("S")) {
+                        System.out.println("Saliendo del programa");
+                        bucle = false;
+                    }
+                }
             }
-        }while (menu!=5);
+        } while (bucle);
     }
 }
