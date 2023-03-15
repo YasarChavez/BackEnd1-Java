@@ -1,4 +1,4 @@
-package ArgentinaProgramaEGG.ArgProgramaJavaGuia03.extras;
+package ArgentinaProgramaEGG.ArgProgramaJavaGuia03EstDeControl.extras;
 
 
 import java.util.Scanner;

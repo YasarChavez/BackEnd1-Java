@@ -1,4 +1,4 @@
-package ArgentinaProgramaEGG.ArgProgramaJavaGuia03.extras;
+package ArgentinaProgramaEGG.ArgProgramaJavaGuia03EstDeControl.extras;
 
 public class Ejerc02 {
     public static void main(String[] args) {
