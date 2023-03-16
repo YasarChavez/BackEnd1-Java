@@ -13,7 +13,11 @@ primer número es múltiplo del segundo, sino informe que no lo son.*/
         int b = leer.nextInt();
 
         boolean multiplos=EsMultiplo(a,b);
-        System.out.println(multiplos);
+        if (multiplos==true){
+            System.out.println("Son multiplos");
+        }else {
+            System.out.println("No son multiplos");
+        }
     }
 
      public static boolean EsMultiplo(int a, int b){
@@ -23,5 +27,6 @@ primer número es múltiplo del segundo, sino informe que no lo son.*/
         }
         return multiplo;
      }
+     //Comentario
 
 }
