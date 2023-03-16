@@ -1,8 +1,8 @@
-package ArgentinaProgramaEGG.ArgProgramaJavaGuia04;
+package ArgentinaProgramaEGG.ArgProgramaJavaGuia04.Teorica;
 
 import java.util.Scanner;
 
-public class Ejerc01GuiaTeorica {
+public class Ejerc01ver01 {
     public static void main(String[] args) {
 /*Escribir un programa que procese una secuencia de caracteres ingresada por
 teclado y terminada en punto, y luego codifique la palabra o frase ingresada de
