@@ -27,6 +27,6 @@ primer número es múltiplo del segundo, sino informe que no lo son.*/
         }
         return multiplo;
      }
-     //Comentario
+
 
 }
