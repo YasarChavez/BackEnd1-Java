@@ -36,7 +36,6 @@ resultados para imprimirlos en el main.*/
             default:
                 break;
         }
-
     }
 
     public static double suma(double a, double b) {
