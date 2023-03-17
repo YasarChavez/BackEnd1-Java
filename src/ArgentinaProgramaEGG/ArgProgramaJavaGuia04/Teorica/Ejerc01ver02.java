@@ -17,6 +17,7 @@ public class Ejerc01ver02 {
         palabra=palabra.replace("i","$");
         palabra=palabra.replace("o","%");
         palabra=palabra.replace("u","*");
+
         return palabra;
     }
 
