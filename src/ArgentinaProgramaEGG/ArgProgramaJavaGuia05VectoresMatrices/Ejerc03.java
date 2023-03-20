@@ -11,6 +11,11 @@ public class Ejerc03 {
         int nv = leer.nextInt();
         int[] vector = new int[nv];
         int[] vdigitos = new int[nv];
+        int un = 0;
+        int dos = 0;
+        int tres = 0;
+        int cuatro = 0;
+        int cinco = 0;
 
         System.out.println("Ingrese los valores:");
         //Leemos numeros del vector
@@ -19,19 +24,34 @@ public class Ejerc03 {
         }
         //Guardamos Digitos en otro vector
         for (int i = 0; i < nv; i++) {
-           vdigitos[i]=digitos(vector[i]);
+            vdigitos[i] = digitos(vector[i]);
         }
         //Mostramos vector Digitos
         for (int i = 0; i < nv; i++) {
-            System.out.println(vector[i]+" tiene "+vdigitos[i]+" digito/s");
+           if (vdigitos[i]==1){
+               un++;
+           } else if (vdigitos[i]==2) {
+               dos++;
+           } else if (vdigitos[i]==3) {
+               tres++;
+           } else if (vdigitos[i]==4) {
+               cuatro++;
+           } else if (vdigitos[i]==5) {
+               cinco++;
+           }
         }
+        System.out.println("Un digito: "+un);
+        System.out.println("Dos digitos: "+dos);
+        System.out.println("Tres digitos: "+tres);
+        System.out.println("Cuatro digitos: "+cuatro);
+        System.out.println("Cinco digitos: "+cinco);
     }
-    public static int digitos(int a){
+
+    public static int digitos(int a) {
         ///Contar cantidad de digitos
-        int digitos=0;
-        while(a !=0)
-        {
-            a = a/10;
+        int digitos = 0;
+        while (a != 0) {
+            a = a / 10;
             digitos++;
         }
         return digitos;
