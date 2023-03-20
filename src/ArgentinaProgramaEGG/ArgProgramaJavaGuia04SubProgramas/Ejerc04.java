@@ -1,4 +1,4 @@
-package ArgentinaProgramaEGG.ArgProgramaJavaGuia04;
+package ArgentinaProgramaEGG.ArgProgramaJavaGuia04SubProgramas;
 
 import java.util.Scanner;
 
@@ -11,8 +11,6 @@ número primo, debe devolver true si es primo, sino false.*/
         System.out.println("Ingrese un numero para ver si es primo:");
         int num = leer.nextInt();
         System.out.println(esPrimo(num));
-
-
     }
 
     public static boolean esPrimo(int numero) {
@@ -33,4 +31,5 @@ número primo, debe devolver true si es primo, sino false.*/
         // Si no hemos encontrado ningún divisor, el número es primo
         return true;
     }
+    
 }
