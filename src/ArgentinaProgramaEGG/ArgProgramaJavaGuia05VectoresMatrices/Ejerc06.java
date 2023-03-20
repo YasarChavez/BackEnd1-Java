@@ -41,13 +41,15 @@ están entre el 1 y el 9.*/
 
         System.out.println("Suma diagonal 1: "+ sumadiag1);
     }
-    public static int sumarDiagonal1(int a){
-        int suma = 0;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-               if ()
-            }
-        }
-
-    }
+//    public static int sumarDiagonal1(int a){
+//        int suma = 0;
+//        for (int i = 0; i < 3; i++) {
+//            for (int j = 0; j < 3; j++) {
+//               if (i == j){
+//
+//               }
+//            }
+//        }
+//
+//    }
 }

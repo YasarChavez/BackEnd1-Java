@@ -10,7 +10,7 @@ enteros y los muestre por pantalla en orden descendente.*/
             vector[i]=i+1;
         }
         //Imprimimos vector
-        for (int i = 0; i<100;i++){
+        for (int i = 99; i >= 0;i--){
             System.out.println(vector[i]);
         }
     }
