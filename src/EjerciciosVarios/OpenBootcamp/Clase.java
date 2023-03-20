@@ -1,4 +1,4 @@
 package EjerciciosVarios.OpenBootcamp;
 
-public class Main {
+public class Clase {
 }
