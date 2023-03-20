@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ejerc05 {
     public static void main(String[] args) {
-        /**/
+        /*Realice un programa que compruebe si una matriz dada es antisimétrica.*/
         Scanner leer = new Scanner(System.in);
         System.out.print("Ingrese la dimension de la matriz: ");
         int n = leer.nextInt();
