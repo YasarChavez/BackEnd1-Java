@@ -1,26 +1,17 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia05VectoresMatrices;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Ejerc01 {
     public static void main(String[] args) {
-        /*Crea un vector llamado ‘Equipo’ cuya dimensión sea la cantidad de compañeros
-de equipo y define su tipo de dato de tal manera que te permita alojar sus
-nombres más adelante.*/
-        Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese cant de compañeros:");
-        int n = leer.nextInt();
-        n=n+1;
-
-        String[] equipo = new String[n];
-        System.out.println("Ingrese los nombres:");
-
-        for (int i = 0; i < n ;i++){
-            equipo[i] = leer.nextLine();
+        /*Realizar un algoritmo que llene un vector con los 100 primeros números
+enteros y los muestre por pantalla en orden descendente.*/
+        int[] vector = new int[100];
+        //Llenamos vector
+        for (int i = 0; i<100;i++){
+            vector[i]=i+1;
         }
-        for (int i = 0; i < n ;i++){
-            System.out.println(equipo[i]);
+        //Imprimimos vector
+        for (int i = 0; i<100;i++){
+            System.out.println(vector[i]);
         }
     }
 }
