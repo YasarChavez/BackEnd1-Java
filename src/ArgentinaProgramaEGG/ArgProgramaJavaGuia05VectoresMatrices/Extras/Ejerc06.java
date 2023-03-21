@@ -20,8 +20,9 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
         inicializar(sopa);
         iniUsados(usados);
         verificarUsados(usados);
+//        mostrar(sopa);
+        leerpalabras(sopa, usados);
         mostrar(sopa);
-        //leerpalabras(sopa, usados);
 
         for (int i = 0; i < 5; i++) {
             System.out.println(usados[i]);
@@ -47,7 +48,8 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
             usados[i] = (int) (Math.random() * (20));
         }
     }
-    public static void verificarUsados(int[]usados){
+
+    public static void verificarUsados(int[] usados) {
         int indice = 0;
         while (indice < usados.length) {
             int numero = (int) (Math.random() * 20); // generar un nuevo número aleatorio
@@ -84,7 +86,8 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
 
     public static void leerpalabras(String[][] sopa, int[] usados) {
         int ind = 0;
-        int numal;
+        int fila = 0;
+        int columna = 0;
         Scanner leer = new Scanner(System.in);
         String palabra = "";
         do {
@@ -93,12 +96,31 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
             palabra = "casa";
             int largo;
             largo = palabra.length();
-            if (largo > 2 && largo < 6) {
-                numal = (int) (Math.random() * 15);
+
+            if (largo > 2 && largo < 5) {
+
+                fila = usados[ind];
+                int numal = (int) (Math.random() * 15);
+                int inicio = 0;
+                int fin = 1;
+                for (int i = 0; i < 20; i++) {
+                    columna = numal;
+
+                    for (int j = columna; j < palabra.length(); j++) {
+
+//                      sopa[fila][columna] = palabra.substring(j,j);
+                        sopa[fila][j] = palabra.substring(inicio, fin);
+//                        inicio++;
+//                        fin++;
+                    }
+                    inicio = 0;
+                    fin = 1;
+                }
 
             } else {
                 System.out.println("Largo incorrecto.");
             }
+            ind++;
         } while (ind < 5);
     }
 }
