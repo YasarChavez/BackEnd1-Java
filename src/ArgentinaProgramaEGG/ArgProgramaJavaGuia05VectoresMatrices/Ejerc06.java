@@ -58,21 +58,11 @@ están entre el 1 y el 9.*/
         int[] vectoH = new int[3];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                vectoH[i] = 0;
-            }
-        }
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
                 vectoH[i] = vectoH[i] + matriz[i][j];
             }
         }
         //Sumar Lineas Vert
         int[] vectoV = new int[3];
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                vectoV[i] = 0;
-            }
-        }
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 vectoV[i] = vectoV[i] + matriz[j][i];
@@ -90,7 +80,6 @@ están entre el 1 y el 9.*/
         }else {
             System.out.println("No es una matriz magica :/");
         }
-
         System.out.println("Suma diagonal 1: " + sumadiag1);
         System.out.println("Suma diagonal 2: " + sumadiag2);
         System.out.println("Suma Horizontal: "+vectoH[0]);
