@@ -20,6 +20,5 @@ public class Ejerc12 {
             contador = contador.replace("3", "E"); // se reemplaza cada aparición del número 3 por la letra E
             System.out.println(contador); // se muestra el contador actual
         }
-
     }
 }
