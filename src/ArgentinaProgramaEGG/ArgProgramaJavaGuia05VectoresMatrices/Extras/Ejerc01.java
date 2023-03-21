@@ -14,7 +14,7 @@ public class Ejerc01 {
         System.out.println("Ingrese los valores del vector:");
         for (int i = 0; i < n; i++) {
             vector[i]= leer.nextInt();
-            suma=suma+vector[i];
+            suma+=vector[i];
         }
         System.out.println("Suma del vector: "+ suma);
     }
