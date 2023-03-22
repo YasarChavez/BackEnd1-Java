@@ -87,7 +87,7 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
             palabra = palabra.toUpperCase();
             int largo;
             largo = palabra.length();
-            if (largo > 2 && largo < 5) {
+            if (largo > 2 && largo < 6) {
                 fila = usados[ind];
                 int k = (int) (Math.random() * 15);
                 for (int i = 0; i < palabra.length(); i++) {
