@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Ejerc05 {
     public static void main(String[] args) {
-        /*Realizar un programa que llene una matriz de tamaño NxM con valores aleatorios y muestre la suma de sus elementos.
+        /*Realizar un programa que llene una matriz de tamaño NxM con valores aleatorios
+        y muestre la suma de sus elementos.
          */
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese cant de filas:");
