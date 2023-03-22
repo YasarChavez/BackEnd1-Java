@@ -20,24 +20,16 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
         inicializar(sopa);
         iniUsados(usados);
         verificarUsados(usados);
-//        mostrar(sopa);
-//        leerpalabras(sopa, usados);
-//        mostrar(sopa);
-
-        for (int i = 0; i < 5; i++) {
-            System.out.println(usados[i]);
-        }
-
-
-//        System.out.println(aleatorio());
+        leerpalabras(sopa, usados);
+        llenardenumeros(sopa);
+        mostrar(sopa);
 
     }
 
     public static void inicializar(String[][] sopa) {
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
-                sopa[i][j] = ".";
-//                sopa[i][j]= String.valueOf(aleatorio());
+                sopa[i][j] = "*";
             }
             System.out.println("");
         }
@@ -73,9 +65,9 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
     public static void mostrar(String[][] sopa) {
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
-                System.out.print(sopa[i][j]);
+                System.out.print(sopa[i][j] + " ");
             }
-            System.out.println("");
+            System.out.println(" ");
         }
     }
 
@@ -89,25 +81,17 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
         int ind = 0;
         int fila = 0;
         Scanner leer = new Scanner(System.in);
-        String palabra = "";
         do {
             System.out.println("Ingrese una palabra de 3 a 5 caracteres:");
-//            palabra = leer.next();
-            palabra = "casa";
+            String palabra = leer.next();
+            palabra = palabra.toUpperCase();
             int largo;
             largo = palabra.length();
-
             if (largo > 2 && largo < 5) {
                 fila = usados[ind];
-                for (int i = 0; i < 20; i++) {
-
-//                    int columna = (int) (Math.random() * 15);
-                    int columna = 10;
-                    for (int j = 10; j < 20; j++) {
-//                      sopa[fila][columna] = palabra.substring(j,j);
-
-                        sopa[fila][j] = String.valueOf(palabra.charAt(j));
-                    }
+                int k = (int) (Math.random() * 15);
+                for (int i = 0; i < palabra.length(); i++) {
+                    sopa[fila][i + k] = String.valueOf(palabra.charAt(i));
                 }
                 ind++;
             } else {
@@ -115,5 +99,15 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
             }
 
         } while (ind < 5);
+    }
+
+    public static void llenardenumeros(String[][] sopa) {
+        for (int i = 0; i < 20; i++) {
+            for (int j = 0; j < 20; j++) {
+                if (sopa[i][j] == "*") {
+                    sopa[i][j] = String.valueOf((int) (Math.random() * 9));
+                }
+            }
+        }
     }
 }
