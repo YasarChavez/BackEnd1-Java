@@ -21,7 +21,8 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
         iniUsados(usados);
         verificarUsados(usados);
         leerpalabras(sopa, usados);
-        llenardenumeros(sopa);
+//        llenardenumeros(sopa);
+        llenardeletras(sopa);
         mostrar(sopa);
 
     }
@@ -100,6 +101,17 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
             for (int j = 0; j < 20; j++) {
                 if (sopa[i][j] == "*") {
                     sopa[i][j] = String.valueOf((int) (Math.random() * 9));
+                }
+            }
+        }
+    }
+    public static void llenardeletras(String[][] sopa) {
+        String abcdario="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+        for (int i = 0; i < 20; i++) {
+            for (int j = 0; j < 20; j++) {
+                int k = (int) (Math.random() * abcdario.length());
+                if (sopa[i][j] == "*") {
+                    sopa[i][j] = String.valueOf(abcdario.charAt(k));
                 }
             }
         }
