@@ -13,7 +13,7 @@ palabras, rellene los espacios no utilizados con un número aleatorio del 0
 al 9. Finalmente imprima por pantalla la sopa de letras creada.
 Nota: Para resolver el ejercicio deberá investigar cómo se utilizan las
 siguientes funciones de Java substring(), Length() y Math.random().*/
-        Scanner leer = new Scanner(System.in);
+//        Scanner leer = new Scanner(System.in);
         String[][] sopa = new String[20][20];
         int[] usados = new int[5];
 
@@ -31,7 +31,7 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
             for (int j = 0; j < 20; j++) {
                 sopa[i][j] = "*";
             }
-            System.out.println("");
+//            System.out.println("");
         }
     }
 
@@ -71,15 +71,9 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
         }
     }
 
-    public static int aleatorio() {
-        int numal;
-        numal = (int) (Math.random() * 10);
-        return numal;
-    }
-
     public static void leerpalabras(String[][] sopa, int[] usados) {
         int ind = 0;
-        int fila = 0;
+        int fila;
         Scanner leer = new Scanner(System.in);
         do {
             System.out.println("Ingrese una palabra de 3 a 5 caracteres:");
