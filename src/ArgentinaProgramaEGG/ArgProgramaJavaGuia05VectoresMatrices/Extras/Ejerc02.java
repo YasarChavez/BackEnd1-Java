@@ -20,14 +20,16 @@ public class Ejerc02 {
             v2[i] = leer.nextInt();
         }
         //Comparar Vectores
+        boolean sonIguales = true;
         for (int i = 0; i < n; i++) {
-            if (v1[i]!=v2[i]){
-                System.out.println("Los vectores son distintos!X!");
-                break;
-            }else{
-                System.out.println("Los vectores son iguales!Y!");
+            if (v1[i]!=v2[i]) {
+                System.out.println("Los vectores NO son iguales!X!");
+                sonIguales = false;
                 break;
             }
+        }
+        if (sonIguales){
+            System.out.println("Los vectores son iguales!Y!");
         }
     }
 }
