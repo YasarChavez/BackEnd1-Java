@@ -21,12 +21,13 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
         iniUsados(usados);
         verificarUsados(usados);
 //        mostrar(sopa);
-        leerpalabras(sopa, usados);
-        mostrar(sopa);
+//        leerpalabras(sopa, usados);
+//        mostrar(sopa);
 
         for (int i = 0; i < 5; i++) {
             System.out.println(usados[i]);
         }
+
 
 //        System.out.println(aleatorio());
 
