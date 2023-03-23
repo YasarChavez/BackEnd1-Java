@@ -8,7 +8,7 @@ public class Ejerc07 {
 
         System.out.print("Ingrese la cantidad de términos que desea generar: ");
         int n = leer.nextInt();
-
+        n+=1;
         int[] fibonacci = new int[n];
 
         // Generar los primeros dos términos de la sucesión de Fibonacci
@@ -22,7 +22,7 @@ public class Ejerc07 {
 
         // Imprimir la sucesión de Fibonacci generada
         System.out.print("La sucesión de Fibonacci generada es: ");
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             System.out.print(fibonacci[i] + " ");
         }
     }
