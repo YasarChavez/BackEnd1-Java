@@ -10,5 +10,7 @@ public class Ejerc01 {
 
         Cancion cancion02 = new Cancion();
         System.out.println(cancion02.getTitulo()+" - "+ cancion02.getTitulo());
+
+        System.out.println(cancion01.toString());
     }
 }

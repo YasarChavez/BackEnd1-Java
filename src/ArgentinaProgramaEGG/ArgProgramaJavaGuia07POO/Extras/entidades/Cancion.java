@@ -35,4 +35,9 @@ public class Cancion {
     public String getAutor() {
         return autor;
     }
+
+    @Override
+    public String toString() {
+        return "Cancion: " + autor + " Título: "+ titulo;
+    }
 }
