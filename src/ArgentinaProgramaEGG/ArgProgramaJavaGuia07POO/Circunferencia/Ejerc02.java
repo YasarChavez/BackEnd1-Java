@@ -1,4 +1,6 @@
-package ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO;
+package ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Circunferencia;
+
+import ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Circunferencia.entidades.Circunferencia;
 
 public class Ejerc02 {
     public static void main(String[] args) {
@@ -21,31 +23,4 @@ e) Método perimetro(): para calcular el perímetro
     }
 }
 
-class Circunferencia {
-    private double radio;
 
-    public Circunferencia(double radio) {
-        this.radio = radio;
-    }
-
-    public void setRadio(double radio) {
-        this.radio = radio;
-    }
-
-    public double getRadio() {
-        return radio;
-    }
-
-    public Circunferencia crearCircunferencia(double radio) {
-        Circunferencia circunferencia = new Circunferencia(radio);
-        return circunferencia;
-    }
-
-    public double area(Circunferencia circunferencia) {
-        return Math.pow(radio,2) * Math.PI ;
-    }
-
-    public double perimetro(Circunferencia circunferencia) {
-        return circunferencia.getRadio() * 2 * Math.PI;
-    }
-}
