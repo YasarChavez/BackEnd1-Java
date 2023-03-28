@@ -75,6 +75,10 @@ public class Puntos {
         return punto;
     }
 
+    /**
+     * @param punto1
+     * @return Distancia
+     */
     public static double Distancia(Puntos punto1){
         double distancia;
         //distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
