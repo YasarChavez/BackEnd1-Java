@@ -50,8 +50,8 @@ public class Puntos {
         return punto;
     }
 
-    public double Distancia(Puntos pi,Puntos puntos ){
-        double distancia = Math.sqrt(Math.pow(getPunto1() - getPunto2(), 2) + Math.pow(y2 - y1, 2));
+    public double Distancia(int pos1, int pos2){
+        double distancia = Math.sqrt(Math.pow(getPos1() - getPos2(), 2) + Math.pow(y2 - y1, 2));
     }
 
 
