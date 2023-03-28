@@ -13,12 +13,12 @@ public class Ejerc03 {
         do {
             System.out.println("Ingrese una letra (' . ' para salir):");
             letra = leer.nextLine();
-            if (letra.equalsIgnoreCase("a")||letra.equalsIgnoreCase("e")||letra.equalsIgnoreCase("i")||letra.equalsIgnoreCase("o")||letra.equalsIgnoreCase("u")){
+            if (letra.equalsIgnoreCase("a") || letra.equalsIgnoreCase("e") || letra.equalsIgnoreCase("i") || letra.equalsIgnoreCase("o") || letra.equalsIgnoreCase("u")) {
                 System.out.println("Es una vocal!");
-            }else {
+            } else {
                 System.out.println("No es una vocal!");
             }
-        }while (!letra.equals("."));
+        } while (!letra.equals("."));
 
 
     }

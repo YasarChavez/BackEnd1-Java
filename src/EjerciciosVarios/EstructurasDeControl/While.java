@@ -12,8 +12,9 @@ public class While {
         while (num < 10) {
             System.out.println("Ingrese un numero:");
             num = leer.nextInt();
-            if (num < 10){
-            System.out.println(num);}
+            if (num < 10) {
+                System.out.println(num);
+            }
         }
     }
 }

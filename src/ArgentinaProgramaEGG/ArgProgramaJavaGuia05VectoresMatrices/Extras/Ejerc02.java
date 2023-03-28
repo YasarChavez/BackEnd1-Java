@@ -22,13 +22,13 @@ public class Ejerc02 {
         //Comparar Vectores
         boolean sonIguales = true;
         for (int i = 0; i < n; i++) {
-            if (v1[i]!=v2[i]) {
+            if (v1[i] != v2[i]) {
                 System.out.println("Los vectores NO son iguales!X!");
                 sonIguales = false;
                 break;
             }
         }
-        if (sonIguales){
+        if (sonIguales) {
             System.out.println("Los vectores son iguales!Y!");
         }
     }

@@ -31,5 +31,5 @@ número primo, debe devolver true si es primo, sino false.*/
         // Si no hemos encontrado ningún divisor, el número es primo
         return true;
     }
-    
+
 }

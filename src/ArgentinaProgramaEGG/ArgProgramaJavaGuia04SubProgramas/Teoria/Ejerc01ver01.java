@@ -22,32 +22,32 @@ transformación.
     }
 
     ///FUNCION
-   public static String codificar(){
+    public static String codificar() {
         Scanner leer = new Scanner(System.in);
         String palabra = "";
-        String letra ="";
-        while (!letra.equals(".")){
+        String letra = "";
+        while (!letra.equals(".")) {
             System.out.println("Ingrese una letra:(Para finalizar '.')");
             letra = leer.next();
-            switch (letra){
+            switch (letra) {
                 case "a":
-                    letra="@";
+                    letra = "@";
                     palabra = palabra.concat(Character.toString(letra.charAt(0)));
                     break;
                 case "e":
-                    letra="#";
+                    letra = "#";
                     palabra = palabra.concat(Character.toString(letra.charAt(0)));
                     break;
                 case "i":
-                    letra="$";
+                    letra = "$";
                     palabra = palabra.concat(Character.toString(letra.charAt(0)));
                     break;
                 case "o":
-                    letra="%";
+                    letra = "%";
                     palabra = palabra.concat(Character.toString(letra.charAt(0)));
                     break;
                 case "u":
-                    letra="*";
+                    letra = "*";
                     palabra = palabra.concat(Character.toString(letra.charAt(0)));
                     break;
                 default:

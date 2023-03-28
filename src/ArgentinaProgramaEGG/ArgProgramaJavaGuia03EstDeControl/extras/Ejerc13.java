@@ -15,9 +15,10 @@ Solicitar la altura de la escalera al usuario al comenzar. Ejemplo: si se ingres
         int n = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el tamaño de la escalera"));
 
         for (int i = 0; i < n + 1; i++) {
-            for (int j = 0; j < i ; j++){
-                System.out.print(j+1);
-            }System.out.println();
+            for (int j = 0; j < i; j++) {
+                System.out.print(j + 1);
+            }
+            System.out.println();
         }
 
     }

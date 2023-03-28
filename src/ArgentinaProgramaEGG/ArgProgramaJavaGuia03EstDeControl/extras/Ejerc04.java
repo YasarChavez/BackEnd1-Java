@@ -11,25 +11,25 @@ muestre su equivalente en romano.*/
         int numero = leer.nextInt();
 
         if (numero >= 1 && numero <= 10) {
-            if (numero==1){
+            if (numero == 1) {
                 System.out.println("I");
-            } else if (numero==2) {
+            } else if (numero == 2) {
                 System.out.println("II");
-            } else if (numero==3) {
+            } else if (numero == 3) {
                 System.out.println("III");
-            } else if (numero==4) {
+            } else if (numero == 4) {
                 System.out.println("IV");
-            } else if (numero==5) {
+            } else if (numero == 5) {
                 System.out.println("V");
-            } else if (numero==6) {
+            } else if (numero == 6) {
                 System.out.println("VI");
-            } else if (numero==7) {
+            } else if (numero == 7) {
                 System.out.println("VII");
-            } else if (numero==8) {
+            } else if (numero == 8) {
                 System.out.println("VIII");
-            } else if (numero==9) {
+            } else if (numero == 9) {
                 System.out.println("IX");
-            } else if (numero==10) {
+            } else if (numero == 10) {
                 System.out.println("X");
             }
         }

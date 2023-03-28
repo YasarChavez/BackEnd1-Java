@@ -105,8 +105,9 @@ siguientes funciones de Java substring(), Length() y Math.random().*/
             }
         }
     }
+
     public static void llenardeletras(String[][] sopa) {
-        String abcdario="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+        String abcdario = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
                 int k = (int) (Math.random() * abcdario.length());

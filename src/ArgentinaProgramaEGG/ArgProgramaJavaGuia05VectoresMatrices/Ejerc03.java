@@ -28,23 +28,23 @@ public class Ejerc03 {
         }
         //Mostramos vector Digitos
         for (int i = 0; i < nv; i++) {
-           if (vdigitos[i]==1){
-               un++;
-           } else if (vdigitos[i]==2) {
-               dos++;
-           } else if (vdigitos[i]==3) {
-               tres++;
-           } else if (vdigitos[i]==4) {
-               cuatro++;
-           } else if (vdigitos[i]==5) {
-               cinco++;
-           }
+            if (vdigitos[i] == 1) {
+                un++;
+            } else if (vdigitos[i] == 2) {
+                dos++;
+            } else if (vdigitos[i] == 3) {
+                tres++;
+            } else if (vdigitos[i] == 4) {
+                cuatro++;
+            } else if (vdigitos[i] == 5) {
+                cinco++;
+            }
         }
-        System.out.println("Un digito: "+un);
-        System.out.println("Dos digitos: "+dos);
-        System.out.println("Tres digitos: "+tres);
-        System.out.println("Cuatro digitos: "+cuatro);
-        System.out.println("Cinco digitos: "+cinco);
+        System.out.println("Un digito: " + un);
+        System.out.println("Dos digitos: " + dos);
+        System.out.println("Tres digitos: " + tres);
+        System.out.println("Cuatro digitos: " + cuatro);
+        System.out.println("Cinco digitos: " + cinco);
     }
 
     public static int digitos(int a) {

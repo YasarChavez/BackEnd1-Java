@@ -17,18 +17,19 @@ public class Ejerc03 {
         imprimir(v);
 
     }
+
     //Funcion Llenar vector con numeros aleatorios
-    public static void aleatorio(int[]v){
+    public static void aleatorio(int[] v) {
         Random r = new Random();
-        for(int i = 0; i < v.length; i++) {
-            v[i] = r.nextInt(10-1)+1;
+        for (int i = 0; i < v.length; i++) {
+            v[i] = r.nextInt(10 - 1) + 1;
         }
     }
     //Funcion imprimir vector
 
-    public static void imprimir(int[]v){
-        for(int i = 0; i < v.length; i++) {
-            System.out.print("|"+v[i]+"|");
+    public static void imprimir(int[] v) {
+        for (int i = 0; i < v.length; i++) {
+            System.out.print("|" + v[i] + "|");
         }
     }
 }

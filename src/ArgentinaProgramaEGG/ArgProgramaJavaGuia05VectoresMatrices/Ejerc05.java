@@ -21,7 +21,7 @@ public class Ejerc05 {
         System.out.println("Matriz 1");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print(" "+matriz[i][j]);
+                System.out.print(" " + matriz[i][j]);
             }
             System.out.println("");
         }
@@ -29,7 +29,7 @@ public class Ejerc05 {
         System.out.println("Matriz 2");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print(" "+matriz[j][i]);
+                System.out.print(" " + matriz[j][i]);
             }
             System.out.println("");
         }

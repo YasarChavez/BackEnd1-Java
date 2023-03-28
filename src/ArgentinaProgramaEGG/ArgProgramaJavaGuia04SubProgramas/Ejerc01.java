@@ -1,7 +1,6 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia04SubProgramas;
 
 
-
 import java.util.Scanner;
 
 public class Ejerc01 {

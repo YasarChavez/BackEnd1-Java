@@ -13,11 +13,11 @@ métodos getters, setters y constructores correspondientes.
 Superficie = base * altura / Perímetro = (base + altura) * 2.
         * */
 
-        Rectangulo rectangulo = new Rectangulo(10,15);
+        Rectangulo rectangulo = new Rectangulo(10, 15);
         System.out.println(rectangulo.perimetro(rectangulo));
         System.out.println(rectangulo.superficie(rectangulo));
         System.out.println("- - - -");
-        Rectangulo rectangulo1 = new Rectangulo(15,20);
+        Rectangulo rectangulo1 = new Rectangulo(15, 20);
         System.out.println(rectangulo1.perimetro(rectangulo1));
         System.out.println(rectangulo1.superficie(rectangulo1));
     }

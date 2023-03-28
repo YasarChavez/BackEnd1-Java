@@ -13,9 +13,9 @@ public class Ejerc02 {
 
         String frase = leer.nextLine();
 
-        if (frase.equalsIgnoreCase("eureka")){
+        if (frase.equalsIgnoreCase("eureka")) {
             System.out.println("Correto!");
-        }else {
+        } else {
             System.out.println("Incorrecto!");
         }
 

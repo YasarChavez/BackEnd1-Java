@@ -11,7 +11,7 @@ equivalente en grados Fahrenheit. La fórmula correspondiente es: F = 32
         System.out.println("Ingrese una temperatura en grados centígrados:");
         float cent = leer.nextFloat();
         float fahren = 32 + (9 * cent / 5);
-        System.out.println(cent+" son: "+fahren+" grados Fahrenheit");
+        System.out.println(cent + " son: " + fahren + " grados Fahrenheit");
 
     }
 }

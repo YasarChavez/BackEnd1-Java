@@ -21,7 +21,7 @@ public class Circunferencia {
     }
 
     public double area(Circunferencia circunferencia) {
-        return Math.pow(radio,2) * Math.PI ;
+        return Math.pow(radio, 2) * Math.PI;
     }
 
     public double perimetro(Circunferencia circunferencia) {

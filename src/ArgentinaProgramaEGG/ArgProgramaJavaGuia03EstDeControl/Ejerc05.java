@@ -17,12 +17,12 @@ public class Ejerc05 {
         System.out.println("Ingrese numeros para sumar hasta llegar al limite:");
 
         do {
-            suma = suma+leer.nextInt();
-        } while (suma<=limite);
+            suma = suma + leer.nextInt();
+        } while (suma <= limite);
 
         System.out.println("Se pasó del limite!");
         System.out.println("Total de la suma: " + suma);
-        System.out.println("Se pasó por : "+ (suma-limite));
-        
+        System.out.println("Se pasó por : " + (suma - limite));
+
     }
 }

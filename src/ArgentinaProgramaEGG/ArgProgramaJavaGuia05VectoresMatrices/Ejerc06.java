@@ -71,20 +71,20 @@ están entre el 1 y el 9.*/
         }
         //Comparar Vectores H y V
         int igualdades = 0;
-        for (int i = 0; i<3;i++){
-            if (vectoH[i]==vectoV[i]){
+        for (int i = 0; i < 3; i++) {
+            if (vectoH[i] == vectoV[i]) {
                 igualdades++;
             }
         }
-        if (sumadiag1==sumadiag2 && igualdades==3){
+        if (sumadiag1 == sumadiag2 && igualdades == 3) {
             System.out.println("Es una matriz magica!");
-        }else {
+        } else {
             System.out.println("No es una matriz magica :/");
         }
         System.out.println("Suma diagonal 1: " + sumadiag1);
         System.out.println("Suma diagonal 2: " + sumadiag2);
-        System.out.println("Suma Horizontal: "+vectoH[0]);
-        System.out.println("Suma Vertical: "+vectoV[0]);
+        System.out.println("Suma Horizontal: " + vectoH[0]);
+        System.out.println("Suma Vertical: " + vectoV[0]);
     }
 
 }

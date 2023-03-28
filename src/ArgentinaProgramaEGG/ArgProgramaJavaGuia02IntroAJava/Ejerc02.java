@@ -10,6 +10,6 @@ muestre por pantalla.*/
         System.out.println("Ingrese su nombre:");
         String nombre;
         nombre = leer.next();
-        System.out.println("Hola "+nombre+"!");
+        System.out.println("Hola " + nombre + "!");
     }
 }

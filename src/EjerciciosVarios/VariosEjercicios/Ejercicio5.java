@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicio5 {
     public static void main(String[] args) {
-    //Define una variable de tipo boolean, double y char. Guarda información en ellas a través del Scanner.
+        //Define una variable de tipo boolean, double y char. Guarda información en ellas a través del Scanner.
         Scanner leer = new Scanner(System.in);
         boolean bandera;
         double numero;
@@ -18,7 +18,6 @@ public class Ejercicio5 {
         System.out.println(bandera);
         System.out.println(numero);
         System.out.println(letra);
-
 
 
     }

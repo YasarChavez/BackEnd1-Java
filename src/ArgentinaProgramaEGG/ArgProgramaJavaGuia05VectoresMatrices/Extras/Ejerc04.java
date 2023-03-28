@@ -49,11 +49,13 @@ public class Ejerc04 {
             alumnos[i] = promedio;
         }
     }
+
     public static void mostrarpromedios(double[] alumnos, int n) {
         for (int i = 0; i < n; i++) {
             System.out.println("Promedio alum " + (i + 1) + ": " + alumnos[i]);
         }
     }
+
     public static void aproNoApro(double[] alumnos, int n) {
         int apro = 0;
         int noapro = 0;

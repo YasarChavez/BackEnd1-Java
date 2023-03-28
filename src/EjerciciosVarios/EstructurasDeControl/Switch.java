@@ -25,25 +25,25 @@ public class Switch {
                 System.out.println("Ingrese dos numeros:");
                 num1 = leer.nextInt();
                 num2 = leer.nextInt();
-                System.out.println("Suma: " + (num1+num2));
+                System.out.println("Suma: " + (num1 + num2));
                 break;
             case 2:
                 System.out.println("Ingrese dos numeros:");
                 num1 = leer.nextInt();
                 num2 = leer.nextInt();
-                System.out.println("Resta: " + (num1-num2));
+                System.out.println("Resta: " + (num1 - num2));
                 break;
             case 3:
                 System.out.println("Ingrese dos numeros:");
                 num1 = leer.nextInt();
                 num2 = leer.nextInt();
-                System.out.println("Multiplicacion: " + (num1*num2));
+                System.out.println("Multiplicacion: " + (num1 * num2));
                 break;
             case 4:
                 System.out.println("Ingrese dos numeros:");
                 num1 = leer.nextInt();
                 num2 = leer.nextInt();
-                System.out.println("Division: " + (num1/num2));
+                System.out.println("Division: " + (num1 / num2));
                 break;
             default:
                 System.out.println("Opcion incorrecta");

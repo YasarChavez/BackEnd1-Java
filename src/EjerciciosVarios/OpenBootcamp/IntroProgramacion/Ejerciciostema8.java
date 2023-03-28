@@ -20,35 +20,39 @@ por último muéstralas por consola.*/
         persona2.setEdad(31);
         persona2.setTelefono(4555500);
 
-        System.out.println(persona1.getNombre()+" "+persona1.getEdad()+" "+persona1.getTelefono());
-        System.out.println(persona2.getNombre()+" "+persona2.getEdad()+" "+persona2.getTelefono());
-
-
+        System.out.println(persona1.getNombre() + " " + persona1.getEdad() + " " + persona1.getTelefono());
+        System.out.println(persona2.getNombre() + " " + persona2.getEdad() + " " + persona2.getTelefono());
 
 
     }
 }
-class Persona{
+
+class Persona {
     private String nombre;
     private int edad;
     private int telefono;
 
-    public void setNombre(String nombre){
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String getNombre(){
+
+    public String getNombre() {
         return nombre;
     }
-    public void setEdad(int edad){
+
+    public void setEdad(int edad) {
         this.edad = edad;
     }
-    public int getEdad(){
+
+    public int getEdad() {
         return edad;
     }
-    public void setTelefono(int telefono){
+
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
-    public int getTelefono(){
+
+    public int getTelefono() {
         return telefono;
     }
 

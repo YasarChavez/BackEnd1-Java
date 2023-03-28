@@ -16,9 +16,9 @@ public class Ejerc03 {
 
         String frase = leer.nextLine();
 
-        if (frase.length()==8){
+        if (frase.length() == 8) {
             System.out.println("Correcto!");
-        }else {
+        } else {
             System.out.println("Incorrecto!");
         }
     }

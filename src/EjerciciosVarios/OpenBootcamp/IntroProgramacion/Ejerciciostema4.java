@@ -33,7 +33,7 @@ estación.*/
         //EJERC WHILE
         System.out.println("Ejercicio While.");
         int numeroWhile = 0;
-        while (numeroWhile<3){
+        while (numeroWhile < 3) {
             System.out.println(numeroWhile);
             numeroWhile++;
         }
@@ -42,30 +42,30 @@ estación.*/
         System.out.println("Ejercicio Do-While.");
         do {
             System.out.println(numeroWhile);
-        }while (numeroWhile<3);
+        } while (numeroWhile < 3);
         System.out.println("-   -   -   -   -");
         //EJERC FOR
         System.out.println("Ejercicio For.");
         int numeroFor = 0;
-        for (numeroFor = 0; numeroFor <=3 ; numeroFor++) {
+        for (numeroFor = 0; numeroFor <= 3; numeroFor++) {
             System.out.println(numeroFor);
         }
         System.out.println("-   -   -   -   -");
         //EJERC SWITCH
         System.out.println("Ejercicio Switch.");
         String estacion = "verano";
-        switch (estacion){
+        switch (estacion) {
             case "primavera":
-                System.out.println("La estacion es : "+ estacion);
+                System.out.println("La estacion es : " + estacion);
                 break;
             case "otoño":
-                System.out.println("La estacion es : "+ estacion);
+                System.out.println("La estacion es : " + estacion);
                 break;
             case "invierno":
-                System.out.println("La estacion es : "+ estacion);
+                System.out.println("La estacion es : " + estacion);
                 break;
             case "verano":
-                System.out.println("La estacion es : "+ estacion);
+                System.out.println("La estacion es : " + estacion);
                 break;
             default:
                 System.out.println("La variable no es una estación!");

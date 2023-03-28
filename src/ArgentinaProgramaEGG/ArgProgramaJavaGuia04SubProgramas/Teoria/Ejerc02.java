@@ -12,21 +12,21 @@ primer número es múltiplo del segundo, sino informe que no lo son.*/
         int a = leer.nextInt();
         int b = leer.nextInt();
 
-        boolean multiplos=EsMultiplo(a,b);
-        if (multiplos){
+        boolean multiplos = EsMultiplo(a, b);
+        if (multiplos) {
             System.out.println("Son multiplos");
-        }else {
+        } else {
             System.out.println("No son multiplos");
         }
     }
 
-     public static boolean EsMultiplo(int a, int b){
-        boolean multiplo=false;
-        if (a % b == 0){
-            multiplo=true;
+    public static boolean EsMultiplo(int a, int b) {
+        boolean multiplo = false;
+        if (a % b == 0) {
+            multiplo = true;
         }
         return multiplo;
-     }
+    }
 
 
 }

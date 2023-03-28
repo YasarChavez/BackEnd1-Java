@@ -33,6 +33,6 @@ public class Ejerc07 {
         }
         System.out.println("Max: " + max);
         System.out.println("Min: " + min);
-        System.out.println("Promedio: " + (prom/numeros));
+        System.out.println("Promedio: " + (prom / numeros));
     }
 }

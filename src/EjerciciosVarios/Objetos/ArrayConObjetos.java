@@ -15,9 +15,10 @@ public class ArrayConObjetos {
         mostrarPersonas(people);
 
     }
-    public static void mostrarPersonas(Person[]people){
+
+    public static void mostrarPersonas(Person[] people) {
         for (int i = 0; i < people.length; i++) {
-            System.out.println(people[i].nombre+" "+people[i].edad);
+            System.out.println(people[i].nombre + " " + people[i].edad);
         }
     }
 }
@@ -25,6 +26,7 @@ public class ArrayConObjetos {
 class Person {
     String nombre;
     int edad;
+
     public Person(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;

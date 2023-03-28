@@ -47,16 +47,17 @@ public class Operacion {
         if (operacion.getNumero1() == 0 || operacion.getNumero2() == 0) {
             System.out.println("Error");
             return 0;
-        }else {
+        } else {
             return numero1 * numero2;
         }
 
     }
+
     public double division(Operacion operacion) {
         if (operacion.getNumero1() == 0 || operacion.getNumero2() == 0) {
             System.out.println("Error");
             return 0;
-        }else {
+        } else {
             return numero1 / numero2;
         }
 

@@ -12,9 +12,9 @@ Superficie = base * altura / Perímetro = (base + altura) * 2.
        * */
 public class Rectangulo {
     private double base;
-    public  double altura;
+    public double altura;
 
-    public Rectangulo(double base,double altura){
+    public Rectangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
     }
@@ -35,10 +35,11 @@ public class Rectangulo {
         return altura;
     }
 
-    public double perimetro(Rectangulo rectangulo){
-        return (rectangulo.getBase()+rectangulo.getAltura())*2;
+    public double perimetro(Rectangulo rectangulo) {
+        return (rectangulo.getBase() + rectangulo.getAltura()) * 2;
     }
-    public double superficie(Rectangulo rectangulo){
-        return  (rectangulo.getBase()*rectangulo.getAltura());
+
+    public double superficie(Rectangulo rectangulo) {
+        return (rectangulo.getBase() * rectangulo.getAltura());
     }
 }

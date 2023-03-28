@@ -24,20 +24,21 @@ iii. * 129.852 yenes es un 1 €*/
         System.out.println("S. Dolares");
         System.out.println("Y. Yenes");
 
-        String moneda= leer.next();
-        conversor(euros,moneda);
+        String moneda = leer.next();
+        conversor(euros, moneda);
     }
-    public static void conversor(int n,String m){
-        m=m.toUpperCase();
-        switch (m){
+
+    public static void conversor(int n, String m) {
+        m = m.toUpperCase();
+        switch (m) {
             case "L":
-                System.out.println(0.86*n);
+                System.out.println(0.86 * n);
                 break;
             case "S":
-                System.out.println(1.28611*n);
+                System.out.println(1.28611 * n);
                 break;
             case "Y":
-                System.out.println(129.852*n);
+                System.out.println(129.852 * n);
                 break;
         }
     }

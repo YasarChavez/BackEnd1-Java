@@ -13,23 +13,23 @@ public class Ejerc06 {
         int per = 1;
         double altbaja = 0;
         double altgeneral = 0;
-        double sumbaja=0;
-        double sumgeneral=0;
+        double sumbaja = 0;
+        double sumgeneral = 0;
         for (int i = 0; i < personas; i++) {
             System.out.println("Ingrese la altura de la persona " + per);
             per++;
             double alt = leer.nextDouble();
-            if (alt<1.60){
-                altbaja=(altbaja+1);
-                altgeneral=(altgeneral+1);
-                sumbaja=(sumbaja+alt);
-                sumgeneral=(sumgeneral+alt);
-            }else {
-                altgeneral=(altgeneral+1);
-                sumgeneral=(sumgeneral+alt);
+            if (alt < 1.60) {
+                altbaja = (altbaja + 1);
+                altgeneral = (altgeneral + 1);
+                sumbaja = (sumbaja + alt);
+                sumgeneral = (sumgeneral + alt);
+            } else {
+                altgeneral = (altgeneral + 1);
+                sumgeneral = (sumgeneral + alt);
             }
         }
-        System.out.println("Altura promedio menor a 1.60: "+(sumbaja/altbaja));
-        System.out.println("Altura promedio general: "+(sumgeneral/personas));
+        System.out.println("Altura promedio menor a 1.60: " + (sumbaja / altbaja));
+        System.out.println("Altura promedio general: " + (sumgeneral / personas));
     }
 }

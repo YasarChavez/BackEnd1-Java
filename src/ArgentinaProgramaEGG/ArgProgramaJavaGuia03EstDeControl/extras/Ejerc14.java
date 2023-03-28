@@ -14,10 +14,10 @@ public class Ejerc14 {
         int edadHijo;
         float promedioEdadHijos;
         for (int i = 0; i < cantidadFamilias; i++) {
-            cantidadHijos = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuántos hijos tiene la familia " + (i+1)+"?"));
+            cantidadHijos = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuántos hijos tiene la familia " + (i + 1) + "?"));
             promedioEdadHijos = 0;
             for (int j = 0; j < cantidadHijos; j++) {
-                edadHijo = Integer.parseInt(JOptionPane.showInputDialog(null, "Cual es la edad del hijo N°"+ (j + 1)));
+                edadHijo = Integer.parseInt(JOptionPane.showInputDialog(null, "Cual es la edad del hijo N°" + (j + 1)));
                 promedioEdadHijos += edadHijo;
             }
             promedioEdadHijos /= cantidadHijos;

@@ -11,15 +11,15 @@ nombres más adelante.*/
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese cant de compañeros:");
         int n = leer.nextInt();
-        n=n+1;
+        n = n + 1;
 
         String[] equipo = new String[n];
         System.out.println("Ingrese los nombres:");
 
-        for (int i = 0; i < n ;i++){
+        for (int i = 0; i < n; i++) {
             equipo[i] = leer.nextLine();
         }
-        for (int i = 0; i < n ;i++){
+        for (int i = 0; i < n; i++) {
             System.out.println(equipo[i]);
         }
     }

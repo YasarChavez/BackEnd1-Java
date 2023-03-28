@@ -29,7 +29,5 @@ public class Ejerc02 {
         System.out.println("A: " + A + ", B: " + B + ", C: " + C + ", D: " + D);
 
 
-
-
     }
 }

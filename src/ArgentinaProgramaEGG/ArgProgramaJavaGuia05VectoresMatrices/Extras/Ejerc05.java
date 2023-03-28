@@ -17,17 +17,17 @@ public class Ejerc05 {
         int sumaMatriz = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                matriz[i][j]=(int) (Math.random()*(10-1)+1);
-                sumaMatriz=sumaMatriz+matriz[i][j];
+                matriz[i][j] = (int) (Math.random() * (10 - 1) + 1);
+                sumaMatriz = sumaMatriz + matriz[i][j];
 
             }
         }
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                System.out.print("|"+matriz[i][j]+"|");
+                System.out.print("|" + matriz[i][j] + "|");
             }
             System.out.println("");
         }
-        System.out.println("Suma de los elementos: "+ sumaMatriz);
+        System.out.println("Suma de los elementos: " + sumaMatriz);
     }
 }

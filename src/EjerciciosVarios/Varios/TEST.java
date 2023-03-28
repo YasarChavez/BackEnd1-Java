@@ -37,7 +37,7 @@ public class TEST {
 //                System.out.print(matriz[x][y]);
 //            }
 //        }
-        for (int i=0; i <=10; i++){
+        for (int i = 0; i <= 10; i++) {
             System.out.println("Numero " + i);
         }
 

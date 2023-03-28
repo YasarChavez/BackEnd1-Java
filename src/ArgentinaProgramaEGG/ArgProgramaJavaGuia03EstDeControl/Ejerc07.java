@@ -26,14 +26,14 @@ public class Ejerc07 {
         do {
             System.out.println("Ingrese una cadena:");
             frase = leer.nextLine();
-            if (frase.length() == 5 && frase.startsWith("x") && frase.endsWith("o")){
+            if (frase.length() == 5 && frase.startsWith("x") && frase.endsWith("o")) {
                 correc++;
-            } else{
+            } else {
                 incorrec++;
             }
         } while (!frase.equals("&&&&&"));
         incorrec--;
-        System.out.println("Cantidad de entradas Correctas: "+ correc);
-        System.out.println("Cantidad de entradas Incorrectas: "+ incorrec);
+        System.out.println("Cantidad de entradas Correctas: " + correc);
+        System.out.println("Cantidad de entradas Incorrectas: " + incorrec);
     }
 }

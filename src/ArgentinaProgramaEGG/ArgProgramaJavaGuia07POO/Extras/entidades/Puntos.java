@@ -61,7 +61,7 @@ public class Puntos {
         return pos4;
     }
 
-    public Puntos crearPuntos(){
+    public Puntos crearPuntos() {
         Scanner leer = new Scanner(System.in);
         Puntos punto = new Puntos();
         System.out.println("Ingrece Pos 1");
@@ -79,7 +79,7 @@ public class Puntos {
      * @param punto1
      * @return Distancia
      */
-    public static double Distancia(Puntos punto1){
+    public static double Distancia(Puntos punto1) {
         double distancia;
         //distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
         return Math.sqrt(Math.pow(punto1.getPos2() - punto1.getPos1(), 2) + Math.pow(punto1.getPos4() - punto1.getPos3(), 2));
