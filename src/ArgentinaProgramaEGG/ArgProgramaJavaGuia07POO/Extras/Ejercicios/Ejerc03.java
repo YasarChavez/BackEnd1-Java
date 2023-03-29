@@ -1,4 +1,7 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.Ejercicios;
+
+import ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.entidades.Juego;
+
 /*Crea una clase "Juego" que tenga un método "iniciar_juego" que permita a dos jugadores
 jugar un juego de adivinanza de números. El primer jugador elige un número y el segundo jugador
 intenta adivinarlo. El segundo jugador tiene un número limitado de intentos y recibe una pista de
@@ -8,7 +11,6 @@ el número de veces que cada jugador ha ganado.
  */
 public class Ejerc03 {
     public static void main(String[] args) {
-
-
+        Juego juego = new Juego().iniciar_juego();
     }
 }
