@@ -52,9 +52,9 @@ public class Empleado {
 
     public Empleado calcularAumento(Empleado empleado){
         if (empleado.getEdad()>30){
-            empleado.setSalario(salario*110);
+            empleado.setSalario(salario*1.10);
         }else {
-            empleado.setSalario(salario*105);
+            empleado.setSalario(salario*1.05);
         }
         return empleado;
     }
