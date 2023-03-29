@@ -51,7 +51,7 @@ public class Cuenta {
         nuevaCuenta.setSaldo(leer.nextDouble());
         return nuevaCuenta;
     }
-    public Cuenta retirarDinero(Cuenta cuenta){
+    public void retirarDinero(Cuenta cuenta){
         Scanner leer = new Scanner(System.in);
         System.out.println("Cuanto desea retirar?");
         double retiro = leer.nextDouble();
@@ -60,6 +60,5 @@ public class Cuenta {
         }else{
             cuenta.setSaldo(saldo-retiro);
         }
-        return null;
     }
 }
