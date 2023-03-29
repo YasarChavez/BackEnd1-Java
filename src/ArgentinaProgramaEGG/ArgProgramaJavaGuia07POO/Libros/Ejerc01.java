@@ -13,10 +13,6 @@ método para cargar un libro pidiendo los datos al usuario y luego
 informar mediante otro método el número de ISBN, el título, el autor del
 libro y el número de páginas. */
         Libro libro1 = new Libro().crearLibro();
-        System.out.println("ISBN: " + libro1.getISBN());
-        System.out.println("Titulo: " + libro1.getTitulo());
-        System.out.println("Autor: " + libro1.getAutor());
-        System.out.println("Numero de paginas: " + libro1.getNumPaginas());
-
+        libro1.mostrarLibro(libro1);
     }
 }
