@@ -45,7 +45,9 @@ public class Cuenta {
     public Cuenta crearCuenta(){
         Scanner leer = new Scanner(System.in);
         Cuenta nuevaCuenta = new Cuenta();
+        System.out.println("Titular:");
         nuevaCuenta.setTitular(leer.nextLine());
+        System.out.println("Saldo:");
         nuevaCuenta.setSaldo(leer.nextDouble());
         return nuevaCuenta;
     }
