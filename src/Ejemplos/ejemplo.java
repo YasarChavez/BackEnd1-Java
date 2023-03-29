@@ -7,6 +7,6 @@ public class ejemplo {
         String nombre = leer.nextLine();
         System.out.println("Hola " + nombre);
         //Comentario
-
+        //Comentario2
     }
 }
