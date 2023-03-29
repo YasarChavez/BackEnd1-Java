@@ -9,6 +9,8 @@ cuenta. Asegúrate de que el saldo nunca sea negativo después de realizar una t
 public class Ejerc05 {
     public static void main(String[] args) {
         Cuenta cuenta = new Cuenta().crearCuenta();
+        cuenta.retirarDinero(cuenta);
+        System.out.println(cuenta.getSaldo());
 
     }
 
