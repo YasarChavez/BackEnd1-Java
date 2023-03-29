@@ -1,4 +1,5 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.entidades;
+
 /*Crea una clase "Rectángulo" que tenga atributos "lado1" y "lado2" y un método "calcular_area"
 que calcule y devuelva el área del rectángulo. Luego crea un objeto "rectangulo1" de la clase
 "Rectángulo" con lados de 4 y 6 y imprime el área del rectángulo.
@@ -39,15 +40,16 @@ public class Rectangulo {
                 '}';
     }
 
-    public Rectangulo crearRectangulo(double lado1,double lado2){
+    public Rectangulo crearRectangulo(double lado1, double lado2) {
         Rectangulo rectangulo = new Rectangulo();
         rectangulo.setLado1(lado1);
         rectangulo.setLado2(lado2);
         return rectangulo;
     }
-    public double calcular_area(Rectangulo rectangulo){
+
+    public double calcular_area(Rectangulo rectangulo) {
         double area;
-        area=rectangulo.getLado1()*rectangulo.getLado2();
+        area = rectangulo.getLado1() * rectangulo.getLado2();
         return area;
     }
 

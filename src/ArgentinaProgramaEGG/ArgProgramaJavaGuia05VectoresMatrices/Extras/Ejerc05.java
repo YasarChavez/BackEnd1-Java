@@ -1,6 +1,5 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia05VectoresMatrices.Extras;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Ejerc05 {

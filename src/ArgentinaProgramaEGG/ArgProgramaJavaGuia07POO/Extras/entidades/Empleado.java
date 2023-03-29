@@ -1,4 +1,5 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.entidades;
+
 /*Crea una clase "Empleado" que tenga atributos como "nombre", "edad" y "salario".
 Luego, crea un método "calcular_aumento" que calcule el aumento salarial de un empleado en
 función de su edad y salario actual. El aumento salarial debe ser del 10% si el empleado tiene más de
@@ -6,7 +7,7 @@ función de su edad y salario actual. El aumento salarial debe ser del 10% si el
 public class Empleado {
     private String nombre;
     private int edad;
-    private  double salario;
+    private double salario;
 
     public Empleado() {
     }
@@ -50,11 +51,11 @@ public class Empleado {
                 '}';
     }
 
-    public Empleado calcularAumento(Empleado empleado){
-        if (empleado.getEdad()>30){
-            empleado.setSalario(salario*1.10);
-        }else {
-            empleado.setSalario(salario*1.05);
+    public Empleado calcularAumento(Empleado empleado) {
+        if (empleado.getEdad() > 30) {
+            empleado.setSalario(salario * 1.10);
+        } else {
+            empleado.setSalario(salario * 1.05);
         }
         return empleado;
     }

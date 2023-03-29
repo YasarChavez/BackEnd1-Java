@@ -1,8 +1,7 @@
 package Ejemplos;
 
-import java.util.List;
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.List;
 
 class ListasDeObjetos {
 
@@ -21,6 +20,7 @@ class ListasDeObjetos {
         }
 
     }
+
     public static Persona buscarPersonaPorNombre(List<Persona> personas, String nombreBuscado) {
         for (Persona persona : personas) {
             if (persona.getNombre().equals(nombreBuscado)) {

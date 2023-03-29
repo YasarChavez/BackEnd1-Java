@@ -32,7 +32,8 @@ public class Libro {
         libro.setNumPaginas(leer.nextInt());
         return libro;
     }
-    public void mostrarLibro(Libro libro){
+
+    public void mostrarLibro(Libro libro) {
         System.out.println(libro.getISBN());
         System.out.println(libro.getTitulo());
         System.out.println(libro.getAutor());

@@ -1,6 +1,5 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia05VectoresMatrices.Teoria;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ejerc01 {

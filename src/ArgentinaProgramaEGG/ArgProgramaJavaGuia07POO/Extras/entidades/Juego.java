@@ -15,8 +15,6 @@ public class Juego {
     private int cont = 0;
 
 
-
-
     public Juego(int numeroX, int intentosMax) {
         this.numeroX = numeroX;
         this.intentosMax = intentosMax;
@@ -52,9 +50,9 @@ public class Juego {
         System.out.println("Jugador 2 adivina el numero secreto!");
         do {
             int num = leer.nextInt();
-            if (num!= juego.getNumeroX()){
+            if (num != juego.getNumeroX()) {
                 juego.setCont(cont += 1);
-            }else {
+            } else {
                 System.out.println("Adivinaste");
             }
         } while (juego.getCont() < juego.getIntentosMax());

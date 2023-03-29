@@ -2,8 +2,6 @@ package ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Libros;
 
 import ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Libros.entidades.Libro;
 
-import java.util.Scanner;
-
 public class Ejerc01 {
     public static void main(String[] args) {
         /*Crear una clase llamada Libro que contenga los siguientes atributos:

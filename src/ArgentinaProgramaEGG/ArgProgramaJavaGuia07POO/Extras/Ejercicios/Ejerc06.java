@@ -8,10 +8,10 @@ función de su edad y salario actual. El aumento salarial debe ser del 10% si el
 30 años o del 5% si tiene menos de 30 años.*/
 public class Ejerc06 {
     public static void main(String[] args) {
-        Empleado empleado1 = new Empleado("Juan",35,10000.0);
+        Empleado empleado1 = new Empleado("Juan", 35, 10000.0);
         empleado1.calcularAumento(empleado1);
         System.out.println(empleado1.toString());
-        Empleado empleado2 = new Empleado("Pedro",25,5000.0);
+        Empleado empleado2 = new Empleado("Pedro", 25, 5000.0);
         empleado2.calcularAumento(empleado2);
         System.out.println(empleado2.toString());
     }

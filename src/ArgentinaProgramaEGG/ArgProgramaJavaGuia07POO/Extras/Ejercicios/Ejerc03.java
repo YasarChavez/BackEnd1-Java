@@ -11,7 +11,7 @@ el número de veces que cada jugador ha ganado.
  */
 public class Ejerc03 {
     public static void main(String[] args) {
-        Juego juego = new Juego(5,3);
+        Juego juego = new Juego(5, 3);
         juego.iniciar_juego(juego);
     }
 }

@@ -1,7 +1,5 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.entidades;
 
-import ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Libros.entidades.Libro;
-
 import java.util.Scanner;
 
 /*Definir una clase llamada Puntos que contendrá las coordenadas de dos

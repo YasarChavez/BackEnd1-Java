@@ -9,7 +9,7 @@ que calcule y devuelva el área del rectángulo. Luego crea un objeto "rectangul
 public class Ejerc07 {
     public static void main(String[] args) {
         //Crear Rectangulo
-        Rectangulo rectangulo1 = new Rectangulo().crearRectangulo(4,6);
+        Rectangulo rectangulo1 = new Rectangulo().crearRectangulo(4, 6);
         //Calcular Area
         System.out.println(rectangulo1.calcular_area(rectangulo1));
     }

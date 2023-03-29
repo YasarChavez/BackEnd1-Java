@@ -42,7 +42,7 @@ public class Cuenta {
                 '}';
     }
 
-    public Cuenta crearCuenta(){
+    public Cuenta crearCuenta() {
         Scanner leer = new Scanner(System.in);
         Cuenta nuevaCuenta = new Cuenta();
         System.out.println("Titular:");
@@ -51,14 +51,15 @@ public class Cuenta {
         nuevaCuenta.setSaldo(leer.nextDouble());
         return nuevaCuenta;
     }
-    public void retirarDinero(Cuenta cuenta){
+
+    public void retirarDinero(Cuenta cuenta) {
         Scanner leer = new Scanner(System.in);
         System.out.println("Cuanto desea retirar?");
         double retiro = leer.nextDouble();
-        if (cuenta.getSaldo()<retiro){
+        if (cuenta.getSaldo() < retiro) {
             System.out.println("No es posible retirar esa cantidad!");
-        }else{
-            cuenta.setSaldo(saldo-retiro);
+        } else {
+            cuenta.setSaldo(saldo - retiro);
         }
     }
 }

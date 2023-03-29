@@ -15,10 +15,10 @@ public class Ejerc05 {
         Cuenta cuenta = new Cuenta().crearCuenta();
         System.out.println("Desea retirar dinero?  si/no");
         String rta = leer.next();
-        if (rta.equalsIgnoreCase("si")){
+        if (rta.equalsIgnoreCase("si")) {
             cuenta.retirarDinero(cuenta);
             System.out.println(cuenta.toString());
-        }else {
+        } else {
             System.out.println("Hasta pronto.");
         }
 
