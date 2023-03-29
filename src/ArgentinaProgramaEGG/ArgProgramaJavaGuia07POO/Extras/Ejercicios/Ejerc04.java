@@ -14,12 +14,15 @@ pueden preparar con los ingredientes disponibles en la cocina.*/
 public class Ejerc04 {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-
+        //Creamos Lista de Objetos.
         List<Receta> recetas = new ArrayList<>();
+        System.out.println("Agregue dos Recetas:");
         recetas.add(new Receta().agregarReceta());
         recetas.add(new Receta().agregarReceta());
 
-        Ingredientes ingredientes = new Ingredientes("agua","sal","papas");
+        System.out.println("Ingrese los ingredientes disponibles en la cocina:");
+//        Ingredientes ingredientes = new Ingredientes("agua","sal","papas");
+        Ingredientes ingredientes = new Ingredientes(leer.nextLine(),leer.nextLine(),leer.nextLine());
 
 
         System.out.println("Ingrese una Receta a buscar.");
@@ -43,7 +46,8 @@ public class Ejerc04 {
         return null;
     }
 
-    public static Ingredientes ingredientesDisponibles (Ingredientes ingredientes){
-
+    public static Ingredientes ingredientesDisponibles (Ingredientes ingredientes,List<Receta> recetaList){
+        System.out.println(recetaList);
+        return null;
     }
 }
