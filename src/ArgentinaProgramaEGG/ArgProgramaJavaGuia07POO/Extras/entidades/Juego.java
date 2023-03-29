@@ -15,15 +15,20 @@ public class Juego {
     private int cont = 0;
 
 
-    public Juego() {
-    }
 
-    public int getNumeroX() {
-        return numeroX;
+
+    public Juego(int numeroX, int intentosMax) {
+        this.numeroX = numeroX;
+        this.intentosMax = intentosMax;
     }
 
     public void setNumeroX(int numeroX) {
         this.numeroX = numeroX;
+
+    }
+
+    public int getNumeroX() {
+        return numeroX;
     }
 
     public int getIntentosMax() {
@@ -42,15 +47,9 @@ public class Juego {
         this.cont = cont;
     }
 
-    public Juego iniciar_juego() {
+    public void iniciar_juego(Juego juego) {
         Scanner leer = new Scanner(System.in);
-        Juego juego = new Juego();
-        System.out.println("Jugador 1 elige el numero secreto:");
-        juego.setNumeroX(leer.nextInt());
-        System.out.println("Jugador 1 elige la cantidad maxima de intentos:");
-        juego.setIntentosMax(leer.nextInt());
         System.out.println("Jugador 2 adivina el numero secreto!");
-
         do {
             int num = leer.nextInt();
             if (num!= juego.getNumeroX()){
@@ -60,6 +59,5 @@ public class Juego {
             }
         } while (juego.getCont() < juego.getIntentosMax());
         System.out.println("Se acabo el juego.");
-        return null;
     }
 }
