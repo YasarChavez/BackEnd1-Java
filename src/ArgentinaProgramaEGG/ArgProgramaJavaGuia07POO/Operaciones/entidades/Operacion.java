@@ -31,8 +31,7 @@ public class Operacion {
     }
 
     public Operacion crearOperacion(double numero1, double numero2) {
-        Operacion nuevaOperacion = new Operacion(numero1, numero2);
-        return nuevaOperacion;
+        return new Operacion(numero1, numero2);
     }
 
     public double sumar(Operacion operacion) {
