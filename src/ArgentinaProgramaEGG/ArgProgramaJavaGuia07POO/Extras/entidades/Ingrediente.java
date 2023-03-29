@@ -1,11 +1,11 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.entidades;
 
-public class Ingredientes {
+public class Ingrediente {
     private String ingredienteD1;
     private String ingredienteD2;
     private String ingredienteD3;
 
-    public Ingredientes(String ingredienteD1, String ingredienteD2, String ingredienteD3) {
+    public Ingrediente(String ingredienteD1, String ingredienteD2, String ingredienteD3) {
         this.ingredienteD1 = ingredienteD1;
         this.ingredienteD2 = ingredienteD2;
         this.ingredienteD3 = ingredienteD3;

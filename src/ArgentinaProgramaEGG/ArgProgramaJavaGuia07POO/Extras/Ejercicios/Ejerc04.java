@@ -1,5 +1,5 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.Ejercicios;
-import ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.entidades.Ingredientes;
+import ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.entidades.Ingrediente;
 import ArgentinaProgramaEGG.ArgProgramaJavaGuia07POO.Extras.entidades.Receta;
 
 import java.util.ArrayList;
@@ -21,8 +21,8 @@ public class Ejerc04 {
         recetas.add(new Receta().agregarReceta());
 
         System.out.println("Ingrese los ingredientes disponibles en la cocina:");
-//        Ingredientes ingredientes = new Ingredientes("agua","sal","papas");
-        Ingredientes ingredientes = new Ingredientes(leer.nextLine(),leer.nextLine(),leer.nextLine());
+        Ingrediente ingredientes = new Ingrediente("agua","sal","papas");
+//        Ingredientes ingredientes = new Ingredientes(leer.nextLine(),leer.nextLine(),leer.nextLine());
 
 
         System.out.println("Ingrese una Receta a buscar.");
@@ -46,7 +46,7 @@ public class Ejerc04 {
         return null;
     }
 
-    public static Ingredientes ingredientesDisponibles (Ingredientes ingredientes,List<Receta> recetaList){
+    public static Ingrediente ingredientesDisponibles (Ingrediente ingredientes,List<Receta> recetaList){
         System.out.println(recetaList);
         return null;
     }
