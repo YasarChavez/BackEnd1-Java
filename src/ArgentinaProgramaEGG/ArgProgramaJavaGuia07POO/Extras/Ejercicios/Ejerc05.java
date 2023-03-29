@@ -10,8 +10,7 @@ public class Ejerc05 {
     public static void main(String[] args) {
         Cuenta cuenta = new Cuenta().crearCuenta();
         cuenta.retirarDinero(cuenta);
-        System.out.println(cuenta.getTitular());
-        System.out.println(cuenta.getSaldo());
+        System.out.println(cuenta.toString());
 
     }
 

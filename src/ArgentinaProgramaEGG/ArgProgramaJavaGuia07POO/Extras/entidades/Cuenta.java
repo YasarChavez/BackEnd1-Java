@@ -36,9 +36,9 @@ public class Cuenta {
 
     @Override
     public String toString() {
-        return "Cuenta{" +
-                "titular='" + titular + '\'' +
-                ", saldo=" + saldo +
+        return "Cuenta:{" +
+                "Titular='" + titular + '\'' +
+                ", Saldo=" + saldo +
                 '}';
     }
 
