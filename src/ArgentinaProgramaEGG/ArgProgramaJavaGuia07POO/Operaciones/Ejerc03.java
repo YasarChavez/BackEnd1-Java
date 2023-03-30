@@ -35,7 +35,7 @@ división y se devuelve el resultado al main.
         Operacion operacion2 = operacion.crearOperacion(0, 10);
         System.out.println(operacion2.multiplicar(operacion2));
 
-        Operacion operacion3 = operacion.crearOperacion(10, 5);
+        Operacion operacion3 = operacion.crearOperacion(10, 0);
         System.out.println(operacion3.division(operacion3));
 
 
