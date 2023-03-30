@@ -6,5 +6,6 @@ public class ejemplo {
         System.out.println("Ingrese su nombre:");
         String nombre = leer.nextLine();
         System.out.println("Hola " + nombre);
+        //Hola Diego, Rita, Erwin!
     }
 }
