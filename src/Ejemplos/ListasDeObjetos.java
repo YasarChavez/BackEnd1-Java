@@ -18,7 +18,6 @@ class ListasDeObjetos {
         } else {
             System.out.println("No se encontró a la persona buscada.");
         }
-        //xD
 
     }
 
