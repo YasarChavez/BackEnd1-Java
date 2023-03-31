@@ -11,6 +11,5 @@ public class ejemplo {
         System.out.println("Ingrese su apellido:");
         String apellido = leer.nextLine();
         System.out.println("Hola " + nombre+" "+apellido);
-        //TODO borrar este comentario.
     }
 }
