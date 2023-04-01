@@ -27,7 +27,7 @@ f) Método consultarDatos: permitirá mostrar todos los datos de la
 cuenta.
  */
         Scanner leer = new Scanner(System.in);
-        //Definimos Servicio para acceder a los metodos de la clese servicio
+        //Definimos Servicio para acceder a los metodos de la clase servicio
         CuentaBancariaServicio servicio = new CuentaBancariaServicio();
         //Creamos cuenta
         CuentaBancaria cuenta = servicio.crearCuenta();
