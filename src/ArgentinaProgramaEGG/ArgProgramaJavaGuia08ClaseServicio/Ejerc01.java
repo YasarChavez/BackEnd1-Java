@@ -34,6 +34,8 @@ cuenta.
 
         int menu = -1;
         do {
+            System.out.println();
+            System.out.println();
             System.out.println("Menu");
             System.out.println("1. Ingresar Dinero");
             System.out.println("2. Retirar Dinero");
