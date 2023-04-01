@@ -50,7 +50,13 @@ indicada.
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese cantidad de café a agregar:  (en ml)");
         int cafe = leer.nextInt();
-        cafetera.setCantidadActual(cafetera.getCantidadActual()+cafe);
+        int restante = cafetera.getCapacidadMaxima()-cafetera.getCantidadActual();
+        if (cafe<=restante){
+            cafetera.setCantidadActual(cafetera.getCantidadActual()+cafe);
+        }else {
+            System.out.println("La cantidad que quiso agregar excede la capacidad de la cafetera.");
+        }
+
     }
 
 }
