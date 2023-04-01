@@ -8,7 +8,7 @@ import ArgentinaProgramaEGG.ArgProgramaJavaGuia08ClaseServicio.Servicio.PersonaS
 llamaremos todos los métodos para cada objeto, deberá comprobar si la
 persona está en su peso ideal, tiene sobrepeso o está por debajo de su
 peso ideal e indicar para cada objeto si la persona es mayor de edad.
-
+//TODO esto.
 Por último, guardaremos los resultados de los métodos calcularIMC y
 esMayorDeEdad en distintas variables(arrays), para después calcular un
 porcentaje de esas 4 personas cuantas están por debajo de su peso,
