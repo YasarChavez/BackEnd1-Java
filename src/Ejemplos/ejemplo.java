@@ -1,5 +1,7 @@
 package Ejemplos;
 
+import EjerciciosVarios.Varios.Funciones;
+
 import java.util.Scanner;
 
 
