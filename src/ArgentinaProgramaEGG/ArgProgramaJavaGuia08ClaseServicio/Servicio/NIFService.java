@@ -15,7 +15,6 @@ public class NIFService {
         return new NIF(DNI,letra);
     }
     public void mostrar(NIF nif){
-
         System.out.println(nif.getDNI()+"-"+ nif.getLetra());
     }
 }
