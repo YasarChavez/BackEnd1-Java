@@ -43,6 +43,8 @@ public class PersonaServicio {
         double peso = leer.nextDouble();
         System.out.println("Ingrese la altura:");
         double altura = leer.nextDouble();
+        System.out.println();
+        System.out.println();
         return new Persona(nombre,edad,sexo,peso,altura);
     }
     public int calcularIMC(Persona persona){
