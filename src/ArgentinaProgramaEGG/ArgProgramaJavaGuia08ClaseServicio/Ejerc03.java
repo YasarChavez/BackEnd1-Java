@@ -23,7 +23,7 @@ public class Ejerc03 {
         int[] IMC = new int[4];
         boolean[] EDADES = new boolean[4];
 //        Persona persona1 = new Persona("Yasar",29,"h",114,1.79);
-//        Persona persona2 = new Persona("Victoria",31,"m",114,1.69);
+//        Persona persona2 = new Persona("Victoria",31,"m",80,1.69);
 //        Persona persona3 = new Persona("Enzo",17,"h",75,1.83);
 //        Persona persona4 = new Persona("Eric",25,"h",50,1.75);
 
