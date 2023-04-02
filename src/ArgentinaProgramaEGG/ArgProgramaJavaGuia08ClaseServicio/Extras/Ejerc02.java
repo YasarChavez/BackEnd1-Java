@@ -8,6 +8,5 @@ public class Ejerc02 {
         NIFService service = new NIFService();
         NIF nif1 = service.crearNif();
         service.mostrar(nif1);
-
     }
 }
