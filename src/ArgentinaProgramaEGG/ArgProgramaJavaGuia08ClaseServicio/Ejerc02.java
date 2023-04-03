@@ -30,6 +30,7 @@ indicada.
         CafeteraServicio servicio = new CafeteraServicio();
         Cafetera cafetera = new Cafetera(6000,2500);
 
+
         int menu = -1;
         do {
             System.out.println();
