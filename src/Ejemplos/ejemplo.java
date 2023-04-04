@@ -3,7 +3,7 @@ package Ejemplos;
 import EjerciciosVarios.Varios.Funciones;
 
 import java.util.Scanner;
-//xD
+
 
 public class ejemplo {
     public static void main(String[] args) {
