@@ -43,8 +43,8 @@ cuenta.
             System.out.println("4. Consultar Saldo");
             System.out.println("5. Consultar Datos");
             System.out.println("0. SALIR");
-            menu=leer.nextInt();
-            switch (menu){
+            menu = leer.nextInt();
+            switch (menu) {
                 case 1:
                     servicio.ingresar(cuenta);
                     break;
@@ -62,7 +62,7 @@ cuenta.
                     break;
                 default:
             }
-        }while (menu!=0);
+        } while (menu != 0);
 
 
     }

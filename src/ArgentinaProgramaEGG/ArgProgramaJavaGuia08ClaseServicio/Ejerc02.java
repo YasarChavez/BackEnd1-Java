@@ -28,7 +28,7 @@ indicada.
 */
         Scanner leer = new Scanner(System.in);
         CafeteraServicio servicio = new CafeteraServicio();
-        Cafetera cafetera = new Cafetera(6000,2500);
+        Cafetera cafetera = new Cafetera(6000, 2500);
 
 
         int menu = -1;
@@ -43,7 +43,7 @@ indicada.
             System.out.println("5. Estado actual de la cafetera");
             System.out.println("6. SALIR");
             menu = leer.nextInt();
-            switch (menu){
+            switch (menu) {
                 case 1:
                     cafetera.setCantidadActual(servicio.llenarCafetera(cafetera));
                     break;
@@ -63,6 +63,6 @@ indicada.
                 default:
                     break;
             }
-        }while (menu!=6);
+        } while (menu != 6);
     }
 }

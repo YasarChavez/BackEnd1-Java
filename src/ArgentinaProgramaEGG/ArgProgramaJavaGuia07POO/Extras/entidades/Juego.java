@@ -20,13 +20,13 @@ public class Juego {
         this.intentosMax = intentosMax;
     }
 
+    public int getNumeroX() {
+        return numeroX;
+    }
+
     public void setNumeroX(int numeroX) {
         this.numeroX = numeroX;
 
-    }
-
-    public int getNumeroX() {
-        return numeroX;
     }
 
     public int getIntentosMax() {

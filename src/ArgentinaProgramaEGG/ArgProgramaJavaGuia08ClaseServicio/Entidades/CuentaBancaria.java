@@ -1,7 +1,7 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia08ClaseServicio.Entidades;
 
 public class CuentaBancaria {
-            /*Realizar una clase llamada CuentaBancaria en el paquete Entidades con
+    /*Realizar una clase llamada CuentaBancaria en el paquete Entidades con
 los siguientes atributos: numeroCuenta(entero), dniCliente(entero largo),
 saldoActual. Agregar constructor vacío, con parámetros, getters y
 setters.
@@ -19,7 +19,7 @@ e) Método consultarSaldo: permitirá consultar el saldo disponible en la
 cuenta.
 f) Método consultarDatos: permitirá mostrar todos los datos de la
 cuenta.
- */
+*/
     private int numeroCuenta;
     private long dniCliente;
     private double saldoActual;

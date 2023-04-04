@@ -40,36 +40,36 @@ public class Libro {
         System.out.println(libro.getNumPaginas());
     }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
-    }
-
     public String getISBN() {
         return ISBN;
     }
 
-    public void setTitulo(String titulo) {
-        this.Titulo = titulo;
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
     }
 
     public String getTitulo() {
         return Titulo;
     }
 
-    public void setAutor(String autor) {
-        Autor = autor;
+    public void setTitulo(String titulo) {
+        this.Titulo = titulo;
     }
 
     public String getAutor() {
         return Autor;
     }
 
-    public void setNumPaginas(int numPaginas) {
-        NumPaginas = numPaginas;
+    public void setAutor(String autor) {
+        Autor = autor;
     }
 
     public int getNumPaginas() {
         return NumPaginas;
+    }
+
+    public void setNumPaginas(int numPaginas) {
+        NumPaginas = numPaginas;
     }
 }
 

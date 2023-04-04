@@ -1,4 +1,5 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia08ClaseServicio.Entidades;
+
 /*Realizar una clase llamada Persona en el paquete de entidades que
 tengan los siguientes atributos: nombre, edad, sexo (‘H’ para hombre, ‘M’
 para mujer, ‘O’ para otro), peso y altura. Si desea añadir algún otro

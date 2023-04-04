@@ -97,12 +97,12 @@ public class Ejerc03 {
                 sobrePeso++;
             }
         }
-        porBajo=((bajoPeso*100)/ IMC.length);
-        System.out.println("Porcentaje bajo peso: "+porBajo+"%");
-        porIdeal=((pesoIdeal*100)/ IMC.length);
-        System.out.println("Porcentaje peso ideal: "+porIdeal+"%");
-        porSobre=((sobrePeso*100)/ IMC.length);
-        System.out.println("Porcentaje sobrepeso: "+porSobre+"%");
+        porBajo = ((bajoPeso * 100) / IMC.length);
+        System.out.println("Porcentaje bajo peso: " + porBajo + "%");
+        porIdeal = ((pesoIdeal * 100) / IMC.length);
+        System.out.println("Porcentaje peso ideal: " + porIdeal + "%");
+        porSobre = ((sobrePeso * 100) / IMC.length);
+        System.out.println("Porcentaje sobrepeso: " + porSobre + "%");
     }
 
 }
