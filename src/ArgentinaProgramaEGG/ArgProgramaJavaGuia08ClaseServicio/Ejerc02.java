@@ -60,7 +60,7 @@ indicada.
                     System.out.println("Capacidad maxima: " + cafetera.getCapacidadMaxima());
                     System.out.println("Cantidad actual: " + cafetera.getCantidadActual());
                     break;
-                default:
+                case 6:
                     break;
             }
         } while (menu != 6);
