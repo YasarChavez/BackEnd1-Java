@@ -30,9 +30,18 @@ que 0.*/
             return false;
         }
     }
-    public void obtenerRaices(Raices raiz){
-        /*llama a tieneRaíces() y si devolvió́true,
+    public  Raices obtenerRaices(Raices raiz){
+        /*llama a tieneRaíces() y si devolvió true,
 imprime las 2 posibles soluciones.*/
-        tieneRaices(raiz);
+        double discriminante =getDiscriminante(raiz);
+        double raiz1 = (-raiz.getB() + Math.sqrt(discriminante)) / (2 * raiz.getA());
+        double raiz2 = (-raiz.getB() - Math.sqrt(discriminante)) / (2 * raiz.getA());
+        if (tieneRaices(raiz)){
+            System.out.println("Raiz 1: "+raiz1);
+            System.out.println("Raiz 2: "+raiz2);
+        }else {
+            System.out.println("No tiene raices.");
+        }
+        return null;
     }
 }
