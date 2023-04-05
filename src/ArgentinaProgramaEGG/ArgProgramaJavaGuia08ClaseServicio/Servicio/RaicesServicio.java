@@ -8,6 +8,7 @@ public class RaicesServicio {
         double discriminante = Math.pow(raiz.getB(), 2) - 4 * raiz.getA() * raiz.getC();
         return discriminante;
     }
+
     public boolean tieneRaices(Raices raiz){
         /*devuelve un booleano indicando si tiene dos
         soluciones, para que esto ocurra, el discriminante debe ser mayor o
