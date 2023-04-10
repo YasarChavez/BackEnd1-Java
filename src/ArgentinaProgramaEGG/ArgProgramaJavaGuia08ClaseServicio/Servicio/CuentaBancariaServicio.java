@@ -56,7 +56,6 @@ retirar se retirará el máximo posible hasta dejar la cuenta en 0.*/
             System.out.println("La cantidad ingresada excede el saldo actual");
             System.out.println("Se retiraron:");
             System.out.println(cuenta.getSaldoActual());
-            ;
             cuenta.setSaldoActual(0);
         } else {
             System.out.println("Se retiraron $" + dinero + " de su cuenta");
@@ -70,7 +69,7 @@ retirar se retirará el máximo posible hasta dejar la cuenta en 0.*/
         /*le permitirá sacar solo un 20% de su saldo.
 Validar que el usuario no saque más del 20%.*/
         double maximoRetirar = cuenta.getSaldoActual() * 0.2;
-        System.out.println("Cuanto dinero quiere retirar de manera RAPIDA?: "+"Maximo: "+maximoRetirar);
+        System.out.println("Cuanto dinero quiere retirar de manera RAPIDA?: " + "Maximo: " + maximoRetirar);
         double dinero = leer.nextDouble();
         if (dinero > maximoRetirar) {
             System.out.println("Su retiro excede el maximo disponible para la operacion.");

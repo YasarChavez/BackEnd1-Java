@@ -19,7 +19,7 @@ if (discriminante < 0) {
 public class Ejerc01 {
     public static void main(String[] args) {
         RaicesServicio servicio = new RaicesServicio();
-        Raices raices = new Raices(2,5,-3);
+        Raices raices = new Raices(2, 5, -3);
         System.out.println(servicio.tieneRaiz(raices));
         System.out.println(servicio.tieneRaices(raices));
         System.out.println(servicio.obtenerRaices(raices));
