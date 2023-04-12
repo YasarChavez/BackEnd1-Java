@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Ejerc01 {
     public static void main(String[] args) {
-        /*Realizar una clase llamada CuentaBancaria en el paquete Entidades con
+        /*Realizar una clase llamada CuentaBancaria en el paquete ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Entidades con
 los siguientes atributos: numeroCuenta(entero), dniCliente(entero largo),
 saldoActual. Agregar constructor vacío, con parámetros, getters y
 setters.
