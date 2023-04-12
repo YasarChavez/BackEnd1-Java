@@ -47,4 +47,24 @@ imprime las 2 posibles soluciones.*/
         }
         return null;
     }
+
+    public void obtenerRaiz(Raices raiz) {
+        if (tieneRaiz(raiz)) {
+            double x = -raiz.getB() / (2 * raiz.getA());
+            System.out.println("La única solución es: " + x);
+        } else {
+            System.out.println("No existe una única solución.");
+        }
+    }
+
+    public void calcular(Raices raiz) {
+        if (tieneRaices(raiz)) {
+            obtenerRaices(raiz);
+        } else if (tieneRaiz(raiz)) {
+            obtenerRaiz(raiz);
+        } else {
+            System.out.println("No existen soluciones reales.");
+        }
+        System.out.println("================================================");
+    }
 }
