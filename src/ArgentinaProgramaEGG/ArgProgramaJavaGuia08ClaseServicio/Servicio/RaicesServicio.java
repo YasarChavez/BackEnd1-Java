@@ -33,7 +33,7 @@ que 0.*/
         }
     }
 
-    public Raices obtenerRaices(Raices raiz) {
+    public void obtenerRaices(Raices raiz) {
         /*llama a tieneRaíces() y si devolvió true,
 imprime las 2 posibles soluciones.*/
         double discriminante = getDiscriminante(raiz);
@@ -45,7 +45,6 @@ imprime las 2 posibles soluciones.*/
         } else {
             System.out.println("No tiene raices.");
         }
-        return null;
     }
 
     public void obtenerRaiz(Raices raiz) {
