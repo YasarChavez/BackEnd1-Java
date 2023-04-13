@@ -20,8 +20,8 @@ public class Ejerc01 {
             System.out.println("6. Reemplazar letra");
             System.out.println("7. Ver si contiene X letra");
             System.out.println("8. Salir");
-            menu=leer.nextInt();
-            switch (menu){
+            menu = leer.nextInt();
+            switch (menu) {
                 case 1:
                     servicio.mostrarVocales(cadena);
                     break;
@@ -49,19 +49,7 @@ public class Ejerc01 {
                 default:
                     break;
             }
-        }while (menu!=8);
-
-
-
-
-
-
-
-
-
-
-
-
+        } while (menu != 8);
 
 
     }
