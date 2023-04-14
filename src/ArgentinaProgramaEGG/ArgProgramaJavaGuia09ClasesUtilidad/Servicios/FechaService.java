@@ -28,10 +28,10 @@ fechaActual = new Date();*/
     public void diferencia(Date fecha1, Date fecha2){
         /*que reciba las dos fechas por parámetro y retorna
 la diferencia de años entre una y otra (edad del usuario).*/
-        System.out.println("Diferencia:");
-        System.out.print(Math.abs(fecha1.getDate()-fecha2.getDate())+" Dias ");
-        System.out.print(Math.abs(fecha1.getMonth()-fecha2.getMonth())+" Mes/es ");
-        System.out.println(Math.abs(fecha1.getYear()-fecha2.getYear())+" Años");
+        System.out.print("Edad del usuario: ");
+//        System.out.print(Math.abs(fecha1.getDate()-fecha2.getDate())+" Dias ");
+//        System.out.print(Math.abs(fecha1.getMonth()-fecha2.getMonth())+" Mes/es ");
+        System.out.print(Math.abs(fecha1.getYear()-fecha2.getYear())+" Años");
 
     }
 }
