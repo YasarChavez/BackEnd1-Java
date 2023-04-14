@@ -29,9 +29,9 @@ fechaActual = new Date();*/
         /*que reciba las dos fechas por parámetro y retorna
 la diferencia de años entre una y otra (edad del usuario).*/
         System.out.println("Diferencia:");
-        System.out.print(fecha1.getDate()-fecha2.getDate()+" Dias ");
-        System.out.print(fecha1.getMonth()-fecha2.getMonth()+" Mes/es ");
-        System.out.println((fecha1.getYear()-fecha2.getYear())*-1+" Años");
+        System.out.print(Math.abs(fecha1.getDate()-fecha2.getDate())+" Dias ");
+        System.out.print(Math.abs(fecha1.getMonth()-fecha2.getMonth())+" Mes/es ");
+        System.out.println(Math.abs(fecha1.getYear()-fecha2.getYear())+" Años");
 
     }
 }
