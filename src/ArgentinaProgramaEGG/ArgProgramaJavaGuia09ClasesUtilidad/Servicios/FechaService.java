@@ -1,5 +1,7 @@
 package ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Servicios;
 
+import ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Entidades.Persona;
+
 import java.util.Date;
 import java.util.Scanner;
 
