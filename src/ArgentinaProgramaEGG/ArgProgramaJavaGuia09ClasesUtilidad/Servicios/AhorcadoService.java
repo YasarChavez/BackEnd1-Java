@@ -61,7 +61,7 @@ que no esté, se le restará uno a sus oportunidades.*/
         boolean esta = buscar(juego,letra);
 
 
-        if (esta==true){
+        if (esta){
             System.out.println("Existe la letra en la palabra");
         }else{
             System.out.println("No existe la letra en la palabra");
