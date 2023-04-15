@@ -25,6 +25,7 @@ valor que ingresó el usuario.*/
 
         System.out.println("Cantidad de jugadas maximas:");
         int jugadasMax = leer.nextInt();
+        juego1.setJugadasMax(jugadasMax);
 
         return juego1;
     }
@@ -33,7 +34,7 @@ valor que ingresó el usuario.*/
 encontrar. Nota: buscar como se usa el vector.length.*/
         System.out.println("Longitud de la palabra: "+juego.getLongitud());
     }
-    public void buscar(Ahorcado juego, String letra){
+    public boolean buscar(Ahorcado juego, String letra){
         /*Este método recibe una letra dada por el
 usuario y busca si la letra ingresada es parte de la palabra o no.
 También informará si la letra estaba o no.*/
@@ -43,10 +44,11 @@ También informará si la letra estaba o no.*/
                cont++;
             }
         }
+        juego.setLetrasEncontradas(juego.getLetrasEncontradas()+cont);
         if (cont>0){
-            System.out.println("Existe la letra en la palabra");
+            return true;
         }else{
-            System.out.println("No existe la letra en la palabra");
+            return false;
         }
 
     }
@@ -56,13 +58,31 @@ usuario y muestre cuantas letras han sido encontradas y cuántas le
 faltan. Este método además deberá devolver true si la letra estaba y
 false si la letra no estaba, ya que, cada vez que se busque una letra
 que no esté, se le restará uno a sus oportunidades.*/
+        boolean esta = buscar(juego,letra);
 
-        for (int i = 0; i < juego.getLongitud(); i++) {
-            if (letra.equalsIgnoreCase(String.valueOf(juego.getPalabra()[i]))){
 
-            }else {
-                juego.setJugadasMax(juego.getJugadasMax()-1);
-            }
+        if (esta==true){
+            System.out.println("Existe la letra en la palabra");
+        }else{
+            System.out.println("No existe la letra en la palabra");
+            juego.setJugadasMax(juego.getJugadasMax()-1);
         }
+    }
+    public void intentos(Ahorcado juego){
+        int encontradas=juego.getLetrasEncontradas();
+        int restantes = juego.getLongitud()- juego.getLetrasEncontradas();
+        System.out.println("Número de letras (encontradas, faltantes): "+encontradas+","+restantes);
+        System.out.println("Intentos restantes: "+juego.getJugadasMax());
+    }
+
+    public void juego(Ahorcado juego){
+        /*el método juego se encargará de llamar todos los
+    métodos previamente mencionados e informará cuando el usuario
+    descubra toda la palabra o se quede sin intentos. Este método se
+    llamará en el main.*/
+        System.out.println("Ingrese una letra");
+        String letra = leer.next();
+        encontradas(juego,letra);
+        intentos(juego);
     }
 }
