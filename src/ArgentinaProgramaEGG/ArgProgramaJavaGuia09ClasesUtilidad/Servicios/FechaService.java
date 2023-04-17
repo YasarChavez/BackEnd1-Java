@@ -31,9 +31,17 @@ fechaActual = new Date();*/
         /*que reciba las dos fechas por parámetro y retorna
 la diferencia de años entre una y otra (edad del usuario).*/
         System.out.print("Edad del usuario: ");
-//        System.out.print(Math.abs(fecha1.getDate()-fecha2.getDate())+" Dias ");
-//        System.out.print(Math.abs(fecha1.getMonth()-fecha2.getMonth())+" Mes/es ");
+        System.out.print(Math.abs(fecha1.getDate()-fecha2.getDate())+" Dias ");
+        System.out.print(Math.abs(fecha1.getMonth()-fecha2.getMonth())+" Mes/es ");
         System.out.print(Math.abs(fecha1.getYear()-fecha2.getYear())+" Años");
 
+    }
+    public int diferencia2(Date fechaNacimiento, Date fechaActual) {
+        int anios = fechaActual.getYear() - fechaNacimiento.getYear();
+        if (fechaNacimiento.getMonth() > fechaActual.getMonth() ||
+                (fechaNacimiento.getMonth() == fechaActual.getMonth() && fechaNacimiento.getDate() > fechaActual.getDate())) {
+            anios--;
+        }
+        return anios;
     }
 }
