@@ -20,20 +20,25 @@ nacimiento de la persona a crear. Retornar el objeto Persona creado.*/
         Date fechaNacimiendo = new Date(anio,mes,dia);
         return new Persona(nombre,fechaNacimiendo);
     }
-    public void calcularEdad(Persona persona){
+    public int calcularEdad(Persona persona){
         /*que calcule la edad del usuario utilizando el
 atributo de fecha de nacimiento y la fecha actual.*/
+        Date fechaNacimiento = persona.getFechaNacimiento();
         Date fechaActual = new Date();
-        System.out.println(Math.abs(fechaActual.getYear()-persona.getFechaNacimiento().getYear())+" Años");
+//        System.out.println(Math.abs(fechaActual.getYear()-persona.getFechaNacimiento().getYear())+" Años");
+        int anios = fechaActual.getYear() - fechaNacimiento.getYear();
+        if (fechaNacimiento.getMonth() > fechaActual.getMonth() ||
+                (fechaNacimiento.getMonth() == fechaActual.getMonth() && fechaNacimiento.getDate() > fechaActual.getDate())) {
+            anios--;
+        }
+        return anios;
     }
 
     public boolean menorQue(Persona persona,int edad){
         /*recibe como parámetro una Persona y una edad.
 Retorna true si la persona es menor que la edad consultada o false
 en caso contrario.*/
-        Date fechaActual = new Date();
-        int edadPersona=(Math.abs(fechaActual.getYear()-persona.getFechaNacimiento().getYear()));
-        if (edadPersona<edad){
+        if (calcularEdad(persona)<edad){
             return true;
         }else {
             return false;
@@ -44,8 +49,13 @@ en caso contrario.*/
 deseada.*/
         System.out.println("Nombre: "+persona.getNombre());
         System.out.println("Fecha de nacimiento: "+persona.getFechaNacimiento());
-        calcularEdad(persona);
-        System.out.println("Menor de edad:");
-        System.out.println(menorQue(persona,18));
+        System.out.println("Edad:");
+        System.out.println(calcularEdad(persona));
+        System.out.println("Ingrese una edad para ver si es menor de dicha edad:");
+        int edadX = leer.nextInt();
+        System.out.println(menorQue(persona,edadX));
+
+
+
     }
 }

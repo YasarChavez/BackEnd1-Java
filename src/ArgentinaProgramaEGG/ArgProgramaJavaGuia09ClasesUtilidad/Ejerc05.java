@@ -9,5 +9,6 @@ public class Ejerc05 {
         Persona persona = service.crearPersona();
         service.mostrarPersona(persona);
 
+
     }
 }
