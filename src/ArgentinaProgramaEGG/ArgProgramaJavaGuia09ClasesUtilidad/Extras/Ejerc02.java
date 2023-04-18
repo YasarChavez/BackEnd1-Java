@@ -14,6 +14,5 @@ public class Ejerc02 {
             service.juego(juego1);
         }while (juego1.getJugadasMax()!=0 && juego1.getLetrasEncontradas()!=juego1.getLongitud());
 
-
     }
 }
