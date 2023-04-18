@@ -34,11 +34,13 @@ public class ArregloService {
     public void inicializarB(double[] arregloA, double[] arregloB) {
         /*copia los primeros 10 números del arreglo A en el
         arreglo B. Luego llenar las últimas 10 posiciones del arreglo B con 0.5.*/
-        for (int i = 0; i < 10; i++) {
-            arregloB[i] = arregloA[i];
-        }
+//        for (int i = 0; i < 10; i++) {
+//            arregloB[i] = arregloA[i];
+//        }
+        System.arraycopy(arregloA, 0, arregloB, 10, 10);
+
 //        Arrays.fill(arregloB,10,19,0.5);
-        Arrays.fill(arregloB, 10, 20, 0.5);
+        Arrays.fill(arregloB, 10, arregloB.length, 0.5);
 
     }
 }

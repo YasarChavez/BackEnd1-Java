@@ -2,6 +2,9 @@ package ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad;
 
 import ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Servicios.ArregloService;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class Ejerc03 {
     public static void main(String[] args) {
         ArregloService service = new ArregloService();
@@ -10,7 +13,7 @@ arreglo B de 20 números reales.
 En el Main nuevamente: inicializar A, mostrar A, ordenar A, inicializar B,
 mostrar A y B.
 */
-        double[] arregloA = new double[50];
+        double[] arregloA = new double[10];
         double[] arregloB = new double[20];
 
         service.inicializarA(arregloA);
