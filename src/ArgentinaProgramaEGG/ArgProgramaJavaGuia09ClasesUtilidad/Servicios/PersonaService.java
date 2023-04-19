@@ -38,11 +38,7 @@ atributo de fecha de nacimiento y la fecha actual.*/
         /*recibe como parámetro una Persona y una edad.
 Retorna true si la persona es menor que la edad consultada o false
 en caso contrario.*/
-        if (calcularEdad(persona)<edad){
-            return true;
-        }else {
-            return false;
-        }
+        return calcularEdad(persona) < edad;
     }
     public void mostrarPersona(Persona persona){
         /*que muestra la información de la persona
