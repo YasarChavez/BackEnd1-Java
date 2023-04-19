@@ -35,7 +35,7 @@ atributo de fecha de nacimiento y la fecha actual.*/
     }
 
     public boolean menorQue(Persona persona,int edad){
-        /*recibe como parámetro una Persona y una edad.
+        /*Recibe como parámetro una Persona y una edad.
 Retorna true si la persona es menor que la edad consultada o false
 en caso contrario.*/
         return calcularEdad(persona) < edad;
