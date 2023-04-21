@@ -17,15 +17,12 @@ valor que ingresó el usuario.*/
         Ahorcado juego1 = new Ahorcado();
         System.out.println("Ingrese la palabra:");
         String cadena = leer.next();
-        int longitud = cadena.length();
         //Setear longitud del arreglo
-        juego1.setLongitud(longitud);
+        juego1.setLongitud(cadena.length());
         //Pasar el String cadena dentro del arreglo letra por letra
         juego1.setPalabra(cadena.toCharArray());
-
         System.out.println("Cantidad de jugadas maximas:");
-        int jugadasMax = leer.nextInt();
-        juego1.setJugadasMax(jugadasMax);
+        juego1.setJugadasMax(leer.nextInt());
 
         return juego1;
     }
@@ -59,8 +56,6 @@ faltan. Este método además deberá devolver true si la letra estaba y
 false si la letra no estaba, ya que, cada vez que se busque una letra
 que no esté, se le restará uno a sus oportunidades.*/
         boolean esta = buscar(juego,letra);
-
-
         if (esta){
             System.out.println("Existe la letra en la palabra");
         }else{
@@ -76,13 +71,14 @@ que no esté, se le restará uno a sus oportunidades.*/
     }
 
     public void juego(Ahorcado juego){
-        /*el método juego se encargará de llamar todos los
+        /*El método juego se encargará de llamar todos los
     métodos previamente mencionados e informará cuando el usuario
     descubra toda la palabra o se quede sin intentos. Este método se
     llamará en el main.*/
         System.out.println("Ingrese una letra");
-        String letra = leer.next();
+        String letra = String.valueOf(leer.next().charAt(0));
         encontradas(juego,letra);
         intentos(juego);
     }
+
 }
