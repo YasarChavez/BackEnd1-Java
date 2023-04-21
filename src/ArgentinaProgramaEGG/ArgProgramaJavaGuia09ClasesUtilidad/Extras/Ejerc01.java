@@ -26,6 +26,7 @@ public class Ejerc01 {
 
 
         } while (adivinado == false);
+        //Comentario
 
     }
     public static int elegirMesSecreto() {
