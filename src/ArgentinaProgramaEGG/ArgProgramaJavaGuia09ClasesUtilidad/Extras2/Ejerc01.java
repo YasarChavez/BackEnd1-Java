@@ -1,9 +1,9 @@
-package ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Extras;
+package ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Extras2;
 
 import ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Entidades.Fracciones;
 import ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Servicios.FraccionesService;
 
-public class Ejerc03 {
+public class Ejerc01 {
     public static void main(String[] args) {
         FraccionesService service = new FraccionesService();
         //1/4 - 2/3
