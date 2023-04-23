@@ -13,7 +13,7 @@ public class Ejerc04 {
 
         Date fechaActual = service.fechaActual();
         System.out.println(fechaActual);
-        service.diferencia(fecha,fechaActual);
-        System.out.println(service.diferencia2(fecha,fechaActual));
+        service.diferencia(fecha, fechaActual);
+        System.out.println(service.diferencia2(fecha, fechaActual));
     }
 }

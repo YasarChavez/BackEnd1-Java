@@ -2,9 +2,6 @@ package ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad;
 
 import ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Servicios.ArregloService;
 
-import java.util.Arrays;
-import java.util.Random;
-
 public class Ejerc03 {
     public static void main(String[] args) {
         ArregloService service = new ArregloService();

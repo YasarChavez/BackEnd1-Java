@@ -11,48 +11,49 @@ Recordar crear una validación sobre las horas, minutos y segundos ingresados po
 animas a simular el paso del tiempo en consola??????*/
 public class TiempoService {
 
-    public static Tiempo crearTiempo(){
+    public static Tiempo crearTiempo() {
         Scanner leer = new Scanner(System.in);
-        int hora=0;
-        int minutos=0;
-        int segundos=0;
-        boolean valido=false;
+        int hora = 0;
+        int minutos = 0;
+        int segundos = 0;
+        boolean valido = false;
         do {
             System.out.println("ingrese hora");
             int dato = leer.nextInt();
-            if (dato < 0 || dato > 23){
+            if (dato < 0 || dato > 23) {
                 System.out.println("ingrese hora valida");
-            }else {
-                hora=dato;
-                valido=true;
+            } else {
+                hora = dato;
+                valido = true;
             }
-        }while (valido==false);
-        valido=false;
+        } while (valido == false);
+        valido = false;
         do {
             System.out.println("ingrese minutos");
             int dato = leer.nextInt();
-            if (dato < 0 || dato > 59){
+            if (dato < 0 || dato > 59) {
                 System.out.println("ingrese minutos valida");
-            }else {
-                minutos=dato;
-                valido=true;
+            } else {
+                minutos = dato;
+                valido = true;
             }
-        }while (valido==false);
-        valido=false;
+        } while (valido == false);
+        valido = false;
         do {
             System.out.println("ingrese segundos");
             int dato = leer.nextInt();
-            if (dato < 0 || dato > 59){
+            if (dato < 0 || dato > 59) {
                 System.out.println("ingrese segundos valida");
-            }else {
-                segundos=dato;
-                valido=true;
+            } else {
+                segundos = dato;
+                valido = true;
             }
-        }while (valido==false);
-        return new Tiempo(hora,minutos,segundos);
+        } while (valido == false);
+        return new Tiempo(hora, minutos, segundos);
     }
+
     public static void imprimirHoraCompleta(Tiempo tiempo) {
-        System.out.println("La hora es: "+tiempo.getHora()+":"+tiempo.getMinutos()+":"+tiempo.getSegundos());
+        System.out.println("La hora es: " + tiempo.getHora() + ":" + tiempo.getMinutos() + ":" + tiempo.getSegundos());
 
     }
 }

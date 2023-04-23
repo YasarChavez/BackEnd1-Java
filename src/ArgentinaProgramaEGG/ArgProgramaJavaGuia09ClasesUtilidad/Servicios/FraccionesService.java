@@ -6,7 +6,7 @@ public class FraccionesService {
     public int calcularMcm(Fracciones fraccionesobj) {
         int den1 = fraccionesobj.getDenominador1();
         int den2 = fraccionesobj.getDenominador2();
-        int mcm= den1* den2;
+        int mcm = den1 * den2;
 
         return mcm;
     }
@@ -17,9 +17,9 @@ public class FraccionesService {
         int den1 = fraccionesobj.getDenominador1();
         int den2 = fraccionesobj.getDenominador2();
         int mcm = calcularMcm(fraccionesobj);
-        int numSuma = ((mcm / den1) * num1 )+ ((mcm / den2) * num2);
+        int numSuma = ((mcm / den1) * num1) + ((mcm / den2) * num2);
         int denSuma = mcm;
-        System.out.println(numSuma+"/"+denSuma);
+        System.out.println(numSuma + "/" + denSuma);
     }
 
     public void restaFracciones(Fracciones fraccionesobj) {
@@ -28,10 +28,11 @@ public class FraccionesService {
         int den1 = fraccionesobj.getDenominador1();
         int den2 = fraccionesobj.getDenominador2();
         int mcm = calcularMcm(fraccionesobj);
-        int numSuma = ((mcm / den1) * num1 )- ((mcm / den2) * num2);
+        int numSuma = ((mcm / den1) * num1) - ((mcm / den2) * num2);
         int denSuma = mcm;
-        System.out.println(numSuma+"/"+denSuma);
+        System.out.println(numSuma + "/" + denSuma);
     }
+
     public void multFracciones(Fracciones fraccionesobj) {
         double numeradorMul = fraccionesobj.getNumerador1() * fraccionesobj.getNumerador2();
         double denominadorMul = fraccionesobj.getDenominador1() * fraccionesobj.getDenominador2();

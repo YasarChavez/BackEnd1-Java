@@ -36,28 +36,30 @@ método cargarAlumnos() para asignarle valor al atributo alumnos*/
         System.out.println("Ingrese el horario del curso: (Mañana o Tarde)");
         String turno = leer.next();
         System.out.println("Ingrese el precio por hora: (Int)");
-        int precioPorHora= leer.nextInt();
+        int precioPorHora = leer.nextInt();
         String[] alumnos = cargarAlumnos();
-        return new Curso(nombreCurso,cantidadHorasPorDia,cantidadDiasPorSemana,turno,precioPorHora,alumnos);
+        return new Curso(nombreCurso, cantidadHorasPorDia, cantidadDiasPorSemana, turno, precioPorHora, alumnos);
     }
-    public void calcularGananciaSemanal(Curso curso){
+
+    public void calcularGananciaSemanal(Curso curso) {
         /*Este método se encarga de
 calcular la ganancia en una semana por curso. Para ello, se deben
 multiplicar la cantidad de horas por día, el precio por hora, la
 cantidad de alumnos y la cantidad de días a la semana que se repite
 el encuentro.*/
         int gananciasSemanales;
-        gananciasSemanales=(curso.getCantidadHorasPorDia()*curso.getCantidadDiasPorSemana()*curso.getPrecioPorHora()*5);
-        System.out.println("Ganancias semanales: $"+gananciasSemanales);
+        gananciasSemanales = (curso.getCantidadHorasPorDia() * curso.getCantidadDiasPorSemana() * curso.getPrecioPorHora() * 5);
+        System.out.println("Ganancias semanales: $" + gananciasSemanales);
     }
-    public void resumenCurso(Curso curso){
-        System.out.println("Nombre del curso: "+curso.getNombreCurso());
+
+    public void resumenCurso(Curso curso) {
+        System.out.println("Nombre del curso: " + curso.getNombreCurso());
         System.out.println("Alumnos: ");
         System.out.println(Arrays.toString(curso.getAlumnos()));
-        System.out.println("Cantidad de horas por dia: "+curso.getCantidadHorasPorDia());
-        System.out.println("Cantidad de dias por semana: "+curso.getCantidadDiasPorSemana());
-        System.out.println("Turno: "+curso.getTurno());
-        System.out.println("Precio por hora: $"+curso.getPrecioPorHora());
+        System.out.println("Cantidad de horas por dia: " + curso.getCantidadHorasPorDia());
+        System.out.println("Cantidad de dias por semana: " + curso.getCantidadDiasPorSemana());
+        System.out.println("Turno: " + curso.getTurno());
+        System.out.println("Precio por hora: $" + curso.getPrecioPorHora());
         calcularGananciaSemanal(curso);
     }
 }

@@ -20,7 +20,7 @@ public class Ejerc01 {
             if (mesUsuario.equalsIgnoreCase(meses[numMesSecreto])) {
                 System.out.println("¡Ha acertado!");
                 adivinado = true;
-            }else{
+            } else {
                 System.out.println("No ha acertado. Intente adivinarlo introduciendo otro mes:");
             }
 
@@ -29,6 +29,7 @@ public class Ejerc01 {
         //Comentario
 
     }
+
     public static int elegirMesSecreto() {
         Random random = new Random();
         int mes = random.nextInt(11) + 1;

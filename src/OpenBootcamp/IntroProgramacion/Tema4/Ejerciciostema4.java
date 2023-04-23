@@ -1,4 +1,4 @@
-package EjerciciosVarios.OpenBootcamp.IntroProgramacion;
+package OpenBootcamp.IntroProgramacion.Tema4;
 
 public class Ejerciciostema4 {
     public static void main(String[] args) {

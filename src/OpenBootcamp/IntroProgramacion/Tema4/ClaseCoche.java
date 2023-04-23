@@ -1,4 +1,4 @@
-package EjerciciosVarios.OpenBootcamp.IntroProgramacion;
+package OpenBootcamp.IntroProgramacion.Tema4;
 
 public class ClaseCoche {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package EjerciciosVarios.OpenBootcamp.IntroProgramacion.Tema8;
+package OpenBootcamp.IntroProgramacion.Tema8;
 
-public class Ejerciciostema8 {
+public class Tema8 {
     public static void main(String[] args) {
         /*Para practicar la encapsulación:
 Crear clase Persona.

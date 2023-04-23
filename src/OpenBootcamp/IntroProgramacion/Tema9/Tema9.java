@@ -1,4 +1,4 @@
-package EjerciciosVarios.OpenBootcamp.IntroProgramacion.Tema9;
+package OpenBootcamp.IntroProgramacion.Tema9;
 
 public class Tema9 {
     public static void main(String[] args) {
