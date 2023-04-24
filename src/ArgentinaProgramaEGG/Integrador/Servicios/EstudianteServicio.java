@@ -13,11 +13,12 @@ public class EstudianteServicio {
         for (int i = 0; i < estudianteObj.length; i++) {
             estudianteObj[i] = new Estudiante();
             Random r = new Random();
-            System.out.println("Ingrese el nombre del estudiante:");
+            System.out.println("Ingrese el nombre del estudiante numero " + (i + 1)+":");
             estudianteObj[i].setNombre(leer.nextLine());
             System.out.println("Nota del estudiante:");
             estudianteObj[i].setNota(r.nextFloat(4,10));
             System.out.println(estudianteObj[i].getNota());
+            System.out.println();
         }
         return new Estudiante();
     }
@@ -60,7 +61,7 @@ public class EstudianteServicio {
     public void mostrarAlumnosNotaMayorPromedio(Estudiante[] estudianteObj){
         for (int i = 0; i < estudianteObj.length; i++) {
             if(estudianteObj[i].getNota() > calcularPromedio(estudianteObj)){
-                System.out.println(estudianteObj[i].toString());
+                System.out.println(estudianteObj[i].getNombre() + ", " + estudianteObj[i].getNota());
             }
         }
     }

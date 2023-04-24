@@ -28,6 +28,9 @@ public class IntegradorMain {
         System.out.println();
         System.out.println("Alumnos con nota mayor al promedio: ");
         System.out.println(Arrays.toString(alumnos));
+        //Mostrar alumnos con nota mayor al promedio
+        System.out.println();
+        System.out.println("Nombre y Nota:");
         servicio.mostrarAlumnosNotaMayorPromedio(estudianteObj);
     }
 }
