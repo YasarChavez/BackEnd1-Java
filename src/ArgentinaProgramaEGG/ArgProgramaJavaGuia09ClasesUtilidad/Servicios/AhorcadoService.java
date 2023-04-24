@@ -2,6 +2,7 @@ package ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Servicios;
 
 import ArgentinaProgramaEGG.ArgProgramaJavaGuia09ClasesUtilidad.Entidades.Ahorcado;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class AhorcadoService {
@@ -29,17 +30,17 @@ valor que ingresó el usuario.*/
         juego1.setPalabra(cadena.toCharArray());
         System.out.println("Cantidad de jugadas maximas:");
         juego1.setJugadasMax(leer.nextInt());
-
         return juego1;
     }
 
-    public boolean buscar(Ahorcado juego, String letra) {
+    public boolean buscar(Ahorcado juego, String letra,char[] palabra) {
         /*Este método recibe una letra dada por el
 usuario y busca si la letra ingresada es parte de la palabra o no.
 También informará si la letra estaba o no.*/
         int cont = 0;
         for (int i = 0; i < juego.getLongitud(); i++) {
             if (letra.equalsIgnoreCase(String.valueOf(juego.getPalabra()[i]))) {
+                palabra[i] = juego.getPalabra()[i];
                 cont++;
             }
         }
@@ -49,16 +50,15 @@ También informará si la letra estaba o no.*/
         } else {
             return false;
         }
-
     }
 
-    public void encontradas(Ahorcado juego, String letra) {
+    public void encontradas(Ahorcado juego, String letra,char[] palabra) {
         /*Que reciba una letra ingresada por el
 usuario y muestre cuantas letras han sido encontradas y cuántas le
 faltan. Este método además deberá devolver true si la letra estaba y
 false si la letra no estaba, ya que, cada vez que se busque una letra
 que no esté, se le restará uno a sus oportunidades.*/
-        boolean esta = buscar(juego, letra);
+        boolean esta = buscar(juego, letra,palabra);
         if (esta) {
             System.out.println("Existe la letra en la palabra");
         } else {
@@ -67,22 +67,23 @@ que no esté, se le restará uno a sus oportunidades.*/
         }
     }
 
-    public void intentos(Ahorcado juego) {
+    public void intentos(Ahorcado juego,char[] palabra) {
         int encontradas = juego.getLetrasEncontradas();
         int restantes = juego.getLongitud() - juego.getLetrasEncontradas();
+        System.out.println(Arrays.toString(palabra));
         System.out.println("Número de letras (encontradas, faltantes): " + encontradas + "," + restantes);
         System.out.println("Intentos restantes: " + juego.getJugadasMax());
     }
 
-    public void juego(Ahorcado juego) {
+    public void juego(Ahorcado juego,char[] palabra) {
         /*El método juego se encargará de llamar todos los
     métodos previamente mencionados e informará cuando el usuario
     descubra toda la palabra o se quede sin intentos. Este método se
     llamará en el main.*/
         System.out.println("Ingrese una letra");
         String letra = String.valueOf(leer.next().charAt(0));
-        encontradas(juego, letra);
-        intentos(juego);
+        encontradas(juego, letra,palabra);
+        intentos(juego,palabra);
     }
 
 }
