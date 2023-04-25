@@ -11,10 +11,8 @@ public class IntegradorMain {
         EstudianteServicio servicio = new EstudianteServicio();
         Estudiante[] estudianteObj = new Estudiante[8];
 
-
         //Cargar alumnos
         servicio.cargarEstudiantes(estudianteObj);
-
         //Mostrar alumnos
         System.out.println("Alumnos: ");
         servicio.mostrarEstudiantes(estudianteObj);

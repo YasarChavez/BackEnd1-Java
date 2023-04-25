@@ -13,8 +13,10 @@ public class EstudianteServicio {
             estudianteObj[i] = new Estudiante();
             Random r = new Random();
             System.out.println("Ingrese el nombre del estudiante numero " + (i + 1) + ":");
-            estudianteObj[i].setNombre(leer.nextLine());
+            estudianteObj[i].setNombre(leer.next());
+//            leer.nextLine();
             System.out.println("Nota del estudiante:");
+//            estudianteObj[i].setNota(leer.nextFloat());
             estudianteObj[i].setNota(r.nextFloat(4, 10));
             System.out.println(estudianteObj[i].getNota());
             System.out.println();
@@ -25,7 +27,7 @@ public class EstudianteServicio {
     public void mostrarEstudiantes(Estudiante[] estudianteObj) {
         for (int i = 0; i < estudianteObj.length; i++) {
 //            System.out.println(estudianteObj[i].toString());
-            System.out.println("Nombre :" + estudianteObj[i].getNombre() + ", Nota: " + estudianteObj[i].getNota());
+            System.out.println("Nombre :" + estudianteObj[i].getNombre() + "  |  Nota: " + estudianteObj[i].getNota());
         }
     }
 
