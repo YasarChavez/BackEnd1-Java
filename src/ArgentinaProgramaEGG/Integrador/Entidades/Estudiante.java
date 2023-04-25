@@ -2,7 +2,7 @@ package ArgentinaProgramaEGG.Integrador.Entidades;
 
 public class Estudiante {
     private String nombre;
-    private  float  nota;
+    private float nota;
 
     public Estudiante() {
     }

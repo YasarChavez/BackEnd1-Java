@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class IntegradorMain {
     public static void main(String[] args) {
 
-        EstudianteServicio servicio  = new EstudianteServicio();
+        EstudianteServicio servicio = new EstudianteServicio();
         Estudiante[] estudianteObj = new Estudiante[8];
 
 
@@ -20,7 +20,7 @@ public class IntegradorMain {
         servicio.mostrarEstudiantes(estudianteObj);
         System.out.println();
         //Calcular promedio
-        System.out.println("Promedio: "+servicio.calcularPromedio(estudianteObj));
+        System.out.println("Promedio: " + servicio.calcularPromedio(estudianteObj));
         //Obtener alumnos con mayor promedio
         servicio.obtenerAlumnosNotaMayorPromedio(estudianteObj);
         String[] alumnos = servicio.obtenerAlumnosNotaMayorPromedio(estudianteObj);

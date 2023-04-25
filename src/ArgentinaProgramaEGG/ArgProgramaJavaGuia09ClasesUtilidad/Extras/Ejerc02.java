@@ -13,7 +13,7 @@ public class Ejerc02 {
         Arrays.fill(palabra, '*');
 
         do {
-            service.juego(juego1,palabra);
+            service.juego(juego1, palabra);
         } while (juego1.getJugadasMax() != 0 && juego1.getLetrasEncontradas() != juego1.getLongitud());
 
     }
