@@ -16,5 +16,12 @@ public class Ejerc02 {
             service.juego(juego1, palabra);
         } while (juego1.getJugadasMax() != 0 && juego1.getLetrasEncontradas() != juego1.getLongitud());
 
+        if (juego1.getJugadasMax() == 0){
+            System.out.println("Perdiste");
+        }
+        if (juego1.getLetrasEncontradas() == juego1.getLongitud()){
+            System.out.println("Ganaste");
+        }
+
     }
 }
