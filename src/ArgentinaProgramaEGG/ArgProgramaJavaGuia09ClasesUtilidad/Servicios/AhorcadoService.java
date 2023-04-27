@@ -40,6 +40,7 @@ También informará si la letra estaba o no.*/
         int cont = 0;
         for (int i = 0; i < juego.getLongitud(); i++) {
             if (letra.equalsIgnoreCase(String.valueOf(juego.getPalabra()[i]))) {
+                //Agrega la letra al vector Palabra
                 palabra[i] = juego.getPalabra()[i];
                 cont++;
             }
